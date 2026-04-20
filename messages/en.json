@@ -1,81 +1,81 @@
 {
   "site": {
     "role": "Data & Analytics Consultant",
-    "title": "Alex Esposito · Data & Analytics Consultant",
-    "description": "Data & Analytics consultant specialising in Salesforce, Power BI, CRM data quality and automation. A portfolio of shipped work from revenue, CRM and process-mining engagements.",
+    "title": "Alex Esposito — Data & Analytics Consultant",
+    "description": "Data & Analytics consultant specializing in Salesforce, Power BI, CRM data quality, and automation. A portfolio of work delivered across revenue, CRM, and process mining.",
     "location": "Rome, Italy",
-    "locale": "en-GB"
+    "locale": "en-US"
   },
   "nav": {
     "home": "Home",
-    "work": "Work",
+    "work": "Projects",
     "about": "About",
     "writing": "Writing",
     "primary": "Primary",
-    "mobileMenu": "Toggle menu",
+    "mobileMenu": "Open menu",
     "skip": "Skip to content",
-    "brandAriaLabel": "{name} · home"
+    "brandAriaLabel": "{name} — home"
   },
   "languageSwitcher": {
     "label": "Language",
-    "switchTo": "Switch to Italian"
+    "switchTo": "Passa all'italiano"
   },
   "themeToggle": {
-    "toDark": "Switch to dark mode",
-    "toLight": "Switch to light mode"
+    "toDark": "Switch to dark theme",
+    "toLight": "Switch to light theme"
   },
   "hero": {
     "badge": "Portfolio · Data & Analytics at Accenture",
     "titleBefore": "I turn",
     "titleAccent": "messy CRM data",
-    "titleAfter": "into clear, reliable insights for management",
+    "titleAfterMain": "into clear, reliable insights for management",
     "description": "Data & Analytics consultant at Accenture. I work with revenue teams on Salesforce implementations, Power BI cockpits, data-quality programs and automations. This site is a portfolio of that work.",
     "ctaPrimary": "See the work",
     "ctaSecondary": "About me",
-    "trust": "Working across this stack"
+    "trust": "I work with this stack"
   },
   "services": {
     "eyebrow": "What I work on",
-    "title": "Four disciplines, one thread: decisions leaders can defend.",
-    "description": "The work spans implementation, analytics, data quality and process discovery, usually in combination on the same account.",
+    "title": "Four disciplines, one thread: defensible decisions.",
+    "description": "The work covers implementation, analytics, data quality, and process mining — often in combination on the same account.",
     "items": [
       {
         "title": "Salesforce Analytics",
-        "body": "Pipeline models, forecasting, stage audits and custom reporting that scales beyond the standard Salesforce toolkit.",
-        "outputs": ["dbt model on SFDC", "Forecast scorecard", "Stage-audit policy"]
+        "body": "Pipeline models, forecasting, stage audits, and custom reporting that scales beyond the standard Salesforce toolkit.",
+        "outputs": ["dbt model on SFDC", "Forecast scorecard", "Stage audit policy"]
       },
       {
         "title": "Power BI",
-        "body": "Executive cockpits, semantic models, and DAX that answer the questions on the agenda — not just the ones in the data.",
-        "outputs": ["Star schema", "Governed measures", "RLS rollout"]
+        "body": "Executive cockpits, semantic models, and DAX that answer the questions on the agenda — not just those in the data.",
+        "outputs": ["Star schema", "Governed measures", "RLS Rollout"]
       },
       {
         "title": "CRM Data Quality",
-        "body": "Quantify the mess, set an index, assign owners, and build the automations that keep it clean in production.",
-        "outputs": ["DQI scoreboard", "Dedup & enrichment", "Ops rhythm"]
+        "body": "I quantify the chaos, define an index, assign owners, and build the automations that keep the CRM clean in production.",
+        "outputs": ["DQI Scoreboard", "Dedup & enrichment", "Operational ritual"]
       },
       {
         "title": "Revenue Ops Enablement",
-        "body": "From spreadsheets to governed pipelines — so board numbers are trusted and teams get their week back.",
-        "outputs": ["Metric contracts", "Self-serve layer", "Runbooks"]
+        "body": "From spreadsheets to governed pipelines — so the numbers that end up in the Boardroom are reliable and the team gets its weeks back.",
+        "outputs": ["Metric contracts", "Self-serve layer", "Runbook"]
       },
       {
         "title": "Process Mining",
-        "body": "Discover how processes actually run — not how the handbook says. Event-log analysis with Fluxicon Disco to surface bottlenecks, rework loops, and margin-eating variants.",
+        "body": "Discover how processes actually run — not just what the manual says. Event-log analysis with Fluxicon Disco to surface bottlenecks, rework loops, and variants that erode your margin.",
         "outputs": ["Event log", "Variant map", "Bottleneck report"]
       }
     ]
   },
   "demo": {
     "eyebrow": "Live preview",
-    "title": "A dashboard designed around decisions, not charts.",
-    "description": "Filter by region to see how a well-modelled pipeline reveals where revenue really comes from — and where it silently stalls.",
-    "regionLabel": "Region filter",
+    "title": "A dashboard designed around decisions, not just charts.",
+    "description": "Filter by region to see how a well-modeled pipeline shows where revenue actually comes from — and where it silently stalls.",
+    "regionLabel": "Region Filter",
     "kpis": {
-      "openPipeline": "Open pipeline",
-      "closedWon": "Closed won (YTD)",
+      "openPipeline": "Open Pipeline",
+      "closedWon": "Closed Won (YTD)",
       "winRate": "Win rate",
-      "stalled": "Stalled pipeline"
+      "stalled": "Stalled Pipeline"
     },
     "hints": {
       "vsPrev": "vs. previous month",
@@ -111,119 +111,33 @@
     "read": "Read case study"
   },
   "process": {
-    "eyebrow": "How engagements run",
-    "title": "A 6-week, fixed-scope shape.",
-    "description": "Most of the work on this site followed the same shape: scoped to end, named deliverables, week-by-week cadence, hand-off the team owns.",
+    "eyebrow": "How I work",
+    "title": "A 6-week shape, fixed scope.",
+    "description": "Most of the work here followed the same shape: designed to finish, defined deliverables, weekly cadence, handovers the team owns.",
     "steps": [
-      { "week": "Week 1", "title": "Decision map", "body": "Interview sponsors, map every question the deliverable has to answer, and agree the success metric before touching data." },
-      { "week": "Week 2–3", "title": "Data contract", "body": "Profile the source systems, quantify quality, and lock definitions with the people who own the upstream fields." },
-      { "week": "Week 3–5", "title": "Build & test", "body": "Incremental models, governed measures, and unit tests on every KPI. Nothing ships without a test." },
-      { "week": "Week 5–6", "title": "Handover", "body": "Docs, runbook, and a training session. The team owns it on Monday — a 2-week warranty follows." }
+      { "week": "Week 1", "title": "Decision mapping", "body": "I interview sponsors, map all questions the deliverable must answer, and agree on the success metric before touching any data." },
+      { "week": "Week 2–3", "title": "Data contract", "body": "I profile source systems, quantify quality, and lock in definitions with whoever owns the upstream fields." },
+      { "week": "Week 3–5", "title": "Build & test", "body": "Incremental models, governed measures, and unit tests on every KPI. Nothing goes to production without a test." },
+      { "week": "Week 6", "title": "Operational handover", "body": "Final training, DAX/SFDC documentation, and setup of daily rituals to make the team autonomous." }
     ]
   },
   "chatBanner": {
-    "eyebrow": "Ask the portfolio anything",
-    "title": "Prefer a conversation over scrolling?",
-    "description": "There is a chatbot trained on my profile, projects and stack. Ask it about a specific case study, which tools I use, or how I approach a problem — in English or in Italian.",
-    "cta": "Chat with me now",
-    "hint": "Replies are AI-generated from my own notes."
+    "title": "Have a Salesforce account or Power BI dashboard no one uses?",
+    "description": "Let's talk about how to turn them into a governance tool your team will actually open every morning.",
+    "cta": "Talk with the bot or book a call",
+    "status": "Available for new Q2 2024 projects"
   },
-  "projectsPage": {
-    "metaTitle": "Work — Case studies in data, analytics & CRM",
-    "metaDescription": "Case studies across Salesforce analytics, Power BI, CRM data quality and revenue operations.",
-    "eyebrow": "Selected engagements",
-    "titleBefore": "Work, written up as",
-    "titleAccent": "case studies",
-    "titleAfter": ".",
-    "description": "Each study follows the same structure: the business problem, the data we had, what we built, and the impact once it was in production."
-  },
-  "projectPage": {
-    "backAll": "All work",
-    "sections": {
-      "problem": "Business problem",
-      "data": "Data available",
-      "solution": "Solution implemented",
-      "impact": "Impact",
-      "takeaway": "What I learned"
-    },
-    "prevLabel": "Previous case study",
-    "nextLabel": "Next case study"
-  },
-  "aboutPage": {
-    "metaTitle": "About — Profile & path",
-    "metaDescription": "From Salesforce CPQ to data, analytics and automation. How I got here and how I think about the work.",
-    "eyebrow": "About",
-    "titleBefore": "From Salesforce to",
-    "titleAccent": "data & automation",
-    "titleAfter": "— the same goal: decisions leaders can defend.",
-    "intro": "I am {name}, a Data & Analytics consultant at Accenture, based in {location}. I started in 2020 implementing Salesforce (CPQ, Service, Sales), then moved into analytics, data quality and automation.",
-    "glanceTitle": "At a glance",
-    "glance": {
-      "years": "Years in consulting",
-      "engagements": "Delivered engagements",
-      "stack": "Primary stack",
-      "based": "Based"
-    },
-    "nowTitle": "What I'm working on now",
-    "now": [
-      "Process mining with Fluxicon Disco on opportunity lifecycles — turning event logs into automations that cut idle time.",
-      "Refining a CRM data-quality scorecard that scales across regions without becoming yet another dashboard no one opens.",
-      "Experimenting with AI assistants over governed Power BI datasets — useful answers, not hallucinated ones."
-    ],
-    "principlesTitle": "How I think about the work",
-    "principles": [
-      { "title": "Decisions first, data second.", "body": "Before any modelling, I map the decisions the deliverable has to support. Everything else follows." },
-      { "title": "Explainable beats clever.", "body": "A score a team overrides is worthless. I choose approaches the business can defend in their own words." },
-      { "title": "End with ownership, not dependency.", "body": "Docs, tests, a runbook, and a training session. The team should own it on Monday." },
-      { "title": "Numbers with a named owner.", "body": "Every metric has a definition, a test, and a human who signs off on it. That is how trust compounds." }
-    ]
-  },
-  "blogPage": {
-    "metaTitle": "Writing — Notes on data, analytics & RevOps",
-    "metaDescription": "Essays on Salesforce forecasting, Power BI design, CRM data quality and the operating habits behind trusted analytics.",
-    "eyebrow": "Writing",
-    "titleBefore": "Notes from the",
-    "titleAccent": "work",
-    "titleAfter": ".",
-    "description": "Short essays on the decisions behind the charts — forecasting, data quality, dashboard design, and the boring habits that make analytics actually trusted. Syndicated from Medium.",
-    "featured": "Featured",
-    "readOnMedium": "Read on Medium",
-    "read": "Read",
-    "readingTime": "{min} min read"
+  "contact": {
+    "title": "Let's work together",
+    "description": "Have a project in mind or just want to chat about Data & Analytics? Send me a message.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cta": "Send me an email",
+    "availability": "Available for consulting and freelance projects"
   },
   "footer": {
-    "navigate": "Navigate",
-    "services": "Services",
-    "elsewhere": "Elsewhere",
-    "rights": "All rights reserved.",
-    "builtWith": "Built with Next.js, Tailwind, Framer Motion. Deployed on Vercel.",
-    "serviceItems": ["Salesforce Analytics", "Power BI", "CRM Data Quality", "Process Mining"]
-  },
-  "notFound": {
-    "code": "404",
-    "title": "This page stalled in stage 0.",
-    "description": "The URL does not exist — or the data model moved. Head back to the case studies or pick up where you left off.",
-    "home": "Back home",
-    "projects": "Browse case studies"
-  },
-  "chat": {
-    "open": "Chat with me now",
-    "buttonLabel": "Chat with me now",
-    "close": "Close chat",
-    "title": "Chat with Alex",
-    "subtitle": "Data & analytics consultant — usually replies in a few seconds.",
-    "greeting": "Hey — I'm Alex (well, a chatbot trained on my profile). Ask me anything about the projects, the stack, or how I'd approach a specific problem. Direi che qui puoi anche scrivermi in italiano.",
-    "placeholder": "Ask about Salesforce, Power BI, forecasting…",
-    "send": "Send message",
-    "typing": "Alex is typing",
-    "suggestionsLabel": "Try asking",
-    "suggestions": [
-      "What do you actually do?",
-      "Tell me about the Salesforce project",
-      "Which Power BI engagement should I read first?",
-      "Are you more technical or business?"
-    ],
-    "error": "Something broke on my side. Try again in a moment.",
-    "disclaimer": "AI-generated replies based on Alex's profile. Not binding."
+    "rights": "© {year} Alex Esposito. All rights reserved.",
+    "builtWith": "Built with Next.js and ❤️ in Rome."
   }
 }

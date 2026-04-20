@@ -49,8 +49,9 @@ export function Hero() {
             <span className="text-gradient">
               <InlineTranslation namespace="hero" tKey="titleAccent" initialText={t("titleAccent")} />
             </span>
-            <br className="hidden sm:block" />{" "}
-            <InlineTranslation namespace="hero" tKey="titleAfter" initialText={t("titleAfter")} />
+            <br className="hidden sm:block" />
+            <span className="inline-block w-2 sm:hidden" aria-hidden />{" "}
+            <InlineTranslation namespace="hero" tKey="titleAfterMain" initialText={t("titleAfterMain")} />
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
