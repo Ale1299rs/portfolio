@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { InlineTranslation } from "@/components/ui/InlineTranslation";
 
 type Step = { week: string; title: string; body: string };
 
@@ -15,9 +16,9 @@ export function ProcessSection() {
     <section id="process" className="py-20 sm:py-28">
       <Container size="wide">
         <SectionHeading
-          eyebrow={t("eyebrow")}
-          title={t("title")}
-          description={t("description")}
+          eyebrow={<InlineTranslation namespace="process" tKey="eyebrow" initialText={t("eyebrow")} />}
+          title={<InlineTranslation namespace="process" tKey="title" initialText={t("title")} />}
+          description={<InlineTranslation namespace="process" tKey="description" initialText={t("description")} />}
         />
 
         <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -32,14 +33,16 @@ export function ProcessSection() {
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-wider text-accent">
-                  {s.week}
+                  <InlineTranslation namespace="process" tKey={`steps.${i}.week`} initialText={s.week} />
                 </span>
                 <span className="text-xs text-muted">0{i + 1}</span>
               </div>
               <h3 className="mt-3 text-base font-semibold tracking-tight">
-                {s.title}
+                <InlineTranslation namespace="process" tKey={`steps.${i}.title`} initialText={s.title} />
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{s.body}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                <InlineTranslation namespace="process" tKey={`steps.${i}.body`} initialText={s.body} />
+              </p>
             </motion.li>
           ))}
         </ol>
@@ -47,3 +50,4 @@ export function ProcessSection() {
     </section>
   );
 }
+

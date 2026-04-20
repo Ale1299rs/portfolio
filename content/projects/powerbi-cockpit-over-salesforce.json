@@ -3,57 +3,60 @@
   "order": 4,
   "category": "Power BI",
   "year": "2022–2023",
-  "stack": ["Power BI", "DAX", "Power Query", "Salesforce connector"],
+  "stack": ["Power BI", "DAX", "Power Query", "SharePoint / Active Directory"],
   "hero": { "accent": "from-emerald-500/20 via-teal-400/10 to-transparent" },
   "featured": true,
   "en": {
-    "title": "Power BI Executive Cockpit over Salesforce",
-    "tagline": "My transition to the data side — Salesforce reports were enough for reps, not for the exec team. Built a proper semantic model on top.",
-    "industry": "Enterprise B2B · commercial leadership",
+    "title": "License Management Dashboard for Call Centre IT",
+    "tagline": "IT was running a manual monthly review to check who held which licenses and which department was over or under its allocation. We replaced it with a real-time self-serve dashboard.",
+    "industry": "Call Centre · IT Operations",
     "duration": "~8 weeks",
-    "problem": "Native Salesforce dashboards covered the day-to-day for reps and managers, but the exec team needed cross-cut views (segment × region × channel × product) that the out-of-the-box reports could not serve cleanly.",
+    "problem": "The IT team ran a recurring joint review every month to cross-reference license assignments against department headcounts: who held what, which departments had excess seats they never used, and which were under-provisioned. The process was entirely manual — spreadsheets, email chains, and a half-day meeting — and it consumed IT's time without adding any analytical depth. There was also no visibility into actual usage, so procurement decisions were made on gut feel.",
     "data": [
-      "Salesforce opportunities, accounts, products, users — via connector",
-      "Historic closed deals for trend analysis",
-      "Org hierarchy and segmentation",
-      "Calendar and quota tables for time & target views"
+      "Active Directory / license assignment export (per user, per product)",
+      "Department org chart and headcount from HR system",
+      "Product usage logs (last-login, activity counts) where available",
+      "License costs per SKU for financial impact calculation"
     ],
     "solution": [
-      "Pulled Salesforce data through Power Query, shaped into a star schema — one fact (Opportunity) plus conformed Date, Account, Product, User dimensions.",
-      "Wrote DAX measures for the handful of KPIs the exec team actually asks about: pipeline coverage, win rate, slippage, avg cycle, quota attainment.",
-      "Designed a 2-layer cockpit: one executive summary page, one drill path per function — mapped to real decisions on the meeting agenda.",
-      "Set up row-level security so regional leads see only their territory; the exec view stays clean."
+      "Built a Power Query pipeline that ingests AD exports and joins them to the org chart so every license is tagged with department, role tier, and cost centre.",
+      "Designed a semantic model with two fact tables — one for assignments, one for usage events — linked to shared Department, User, and Product dimensions.",
+      "Dashboard shows three views: real-time assignment map (who holds what), department variance (over/under vs. headcount target), and a usage heatmap (licensed but never used in 90 days).",
+      "Added drill-through so IT can select a department, see every individual license, flag reclaims, and export a clean handover list — no spreadsheet needed.",
+      "Threshold alerts on the dashboard surface departments exceeding budgeted seats by more than 10%, triggering an automated Power Automate notification to the IT lead."
     ],
     "impact": [
-      { "label": "Weekly prep", "value": "−1 day/wk", "detail": "for the commercial analyst" },
-      { "label": "KPI layer", "value": "single source", "detail": "exec numbers match the detail views" },
-      { "label": "Time-to-insight", "value": "minutes", "detail": "on cross-cut questions" }
+      { "label": "Monthly review", "value": "eliminated", "detail": "replaced by always-on self-serve dashboard" },
+      { "label": "Unused licenses found", "value": "23%", "detail": "of total pool flagged for reclaim in first run" },
+      { "label": "IT time saved", "value": "~1 day/mo", "detail": "previously spent on joint review coordination" }
     ],
-    "takeaway": "The data model is the product. Once the star schema is right, the DAX is small and the dashboard is obvious."
+    "takeaway": "Recurring manual reviews are a sign of missing infrastructure, not missing discipline. One governed dataset removes the meeting, surfaces the exceptions automatically, and moves IT from reviewer to decision-enabler."
   },
   "it": {
-    "title": "Cockpit executive Power BI sopra Salesforce",
-    "tagline": "La mia transizione sul lato data — i report Salesforce bastavano per i rep, non per l'exec team. Costruito un modello semantico serio sopra.",
-    "industry": "Enterprise B2B · leadership commerciale",
+    "title": "Dashboard di gestione licenze per IT Call Centre",
+    "tagline": "L'IT faceva una revisione manuale mensile per controllare chi aveva quali licenze e quali dipartimenti erano in eccesso o in difetto. L'abbiamo sostituita con una dashboard self-serve in tempo reale.",
+    "industry": "Call Centre · IT Operations",
     "duration": "~8 settimane",
-    "problem": "Le dashboard native Salesforce coprivano il quotidiano di rep e manager, ma l'exec team aveva bisogno di viste trasversali (segmento × region × canale × prodotto) che i report out-of-the-box non servivano in modo pulito.",
+    "problem": "Il team IT conduceva ogni mese una revisione congiunta per incrociare le assegnazioni di licenze con gli organici dei dipartimenti: chi aveva cosa, quali reparti avevano posti in eccesso mai usati e quali erano sotto-provisioned. Il processo era interamente manuale — fogli Excel, scambi di email e mezzo giorno di meeting — e consumava il tempo dell'IT senza aggiungere profondità analitica. Non c'era nemmeno visibilità sull'utilizzo effettivo, quindi le decisioni di procurement venivano prese a intuito.",
     "data": [
-      "Opportunity, account, prodotti, utenti Salesforce — via connector",
-      "Deal chiusi storici per l'analisi di trend",
-      "Gerarchia org e segmentazione",
-      "Tabelle calendario e quota per viste tempo & target"
+      "Export di Active Directory / assegnazione licenze (per utente, per prodotto)",
+      "Organigramma e headcount dal sistema HR",
+      "Log di utilizzo dei prodotti (ultimo accesso, conteggi attività) dove disponibili",
+      "Costi licenza per SKU per il calcolo dell'impatto economico"
     ],
     "solution": [
-      "Estratti i dati Salesforce con Power Query e modellati in star schema — un fact (Opportunity) più le dimensioni conformate Date, Account, Product, User.",
-      "Scritte misure DAX solo per i pochi KPI che l'exec chiede davvero: pipeline coverage, win rate, slippage, cycle medio, raggiungimento quota.",
-      "Disegnato un cockpit a 2 livelli: una pagina executive summary, un drill path per funzione — mappati su decisioni reali dell'agenda.",
-      "Row-level security: i regional vedono solo il loro territorio, la vista exec resta pulita."
+      "Costruita una pipeline Power Query che ingerisce gli export AD e li unisce all'organigramma, in modo che ogni licenza sia taggata con dipartimento, livello di ruolo e centro di costo.",
+      "Disegnato un modello semantico con due fact table — una per le assegnazioni, una per gli eventi di utilizzo — collegate alle dimensioni condivise Dipartimento, Utente e Prodotto.",
+      "La dashboard mostra tre viste: mappa delle assegnazioni in tempo reale (chi ha cosa), varianza per dipartimento (eccesso/difetto vs. target headcount), e una heatmap di utilizzo (licenziati ma mai usati negli ultimi 90 giorni).",
+      "Aggiunto drill-through: l'IT seleziona un dipartimento, vede ogni singola licenza, contrassegna i recuperi ed esporta un elenco pulito — nessun foglio Excel necessario.",
+      "Alert a soglia sulla dashboard per i dipartimenti che superano di oltre il 10% i posti a budget, con notifica automatica via Power Automate al responsabile IT."
     ],
     "impact": [
-      { "label": "Prep settimanale", "value": "−1 giorno/sett", "detail": "per l'analyst commerciale" },
-      { "label": "Layer KPI", "value": "single source", "detail": "i numeri exec combaciano con i dettagli" },
-      { "label": "Time-to-insight", "value": "minuti", "detail": "sulle domande trasversali" }
+      { "label": "Revisione mensile", "value": "eliminata", "detail": "sostituita da dashboard self-serve always-on" },
+      { "label": "Licenze inutilizzate trovate", "value": "23%", "detail": "del pool totale segnalato per il recupero al primo run" },
+      { "label": "Tempo IT risparmiato", "value": "~1 giorno/mese", "detail": "prima speso nel coordinamento della revisione congiunta" }
     ],
-    "takeaway": "Il data model è il prodotto. Una volta che lo star schema è giusto, il DAX è poco e la dashboard diventa ovvia."
+    "takeaway": "Le revisioni manuali ricorrenti sono il segnale di un'infrastruttura mancante, non di mancanza di disciplina. Un dataset governato rimuove il meeting, fa emergere le eccezioni automaticamente e trasforma l'IT da revisore a enabler delle decisioni."
   }
 }
+

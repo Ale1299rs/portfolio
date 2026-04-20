@@ -39,6 +39,24 @@ export function AdminModeProvider({ children }: { children: ReactNode }) {
   return (
     <AdminModeContext.Provider value={{ isAdminMode }}>
       {children}
+      {isAdminMode && (
+        <div className="fixed bottom-4 right-4 z-[9999] flex items-center gap-2 rounded-full border border-accent/40 bg-surface/90 px-3 py-2 text-xs font-medium shadow-lg backdrop-blur">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+          <span className="text-accent">Editing ON</span>
+          <span className="text-muted">· CMD+E per uscire</span>
+          <button
+            onClick={() => {
+              sessionStorage.setItem("admin-mode", "false");
+              setIsAdminMode(false);
+            }}
+            className="ml-1 text-muted hover:text-fg"
+            aria-label="Disattiva modalità editing"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </AdminModeContext.Provider>
   );
 }
+

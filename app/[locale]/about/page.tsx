@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/layout/Reveal";
 import { site } from "@/lib/site";
 import { routing } from "@/i18n/routing";
+import { InlineTranslation } from "@/components/ui/InlineTranslation";
 
 type Principle = { title: string; body: string };
 
@@ -45,20 +46,20 @@ export default async function AboutPage({
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                {t("eyebrow")}
+                <InlineTranslation namespace="aboutPage" tKey="eyebrow" initialText={t("eyebrow")} />
               </span>
               <h1 className="mt-5 text-display-lg font-semibold tracking-tight">
-                {t("titleBefore")}{" "}
-                <span className="text-gradient">{t("titleAccent")}</span>{" "}
-                {t("titleAfter")}
+                <InlineTranslation namespace="aboutPage" tKey="titleBefore" initialText={t("titleBefore")} />{" "}
+                <span className="text-gradient"><InlineTranslation namespace="aboutPage" tKey="titleAccent" initialText={t("titleAccent")} /></span>{" "}
+                <InlineTranslation namespace="aboutPage" tKey="titleAfter" initialText={t("titleAfter")} />
               </h1>
               <p className="mt-5 text-lg leading-relaxed text-muted">
-                {t("intro", { name: site.name, location: tSite("location") })}
+                <InlineTranslation namespace="aboutPage" tKey="intro" initialText={t("intro", { name: site.name, location: tSite("location") })} />
               </p>
             </div>
             <aside className="rounded-2xl border border-border bg-surface p-6">
               <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                {t("glanceTitle")}
+                <InlineTranslation namespace="aboutPage" tKey="glanceTitle" initialText={t("glanceTitle")} />
               </h2>
               <dl className="mt-4 grid grid-cols-2 gap-4 text-sm">
                 <div>
@@ -105,7 +106,7 @@ export default async function AboutPage({
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
               </span>
               <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-                {t("nowTitle")}
+                <InlineTranslation namespace="aboutPage" tKey="nowTitle" initialText={t("nowTitle")} />
               </h2>
             </div>
             <ul className="mt-4 space-y-3 text-[15px] leading-relaxed text-muted">
@@ -126,15 +127,17 @@ export default async function AboutPage({
       <section className="border-t border-border bg-surface/40 py-16 sm:py-20">
         <Container size="wide">
           <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            {t("principlesTitle")}
+            <InlineTranslation namespace="aboutPage" tKey="principlesTitle" initialText={t("principlesTitle")} />
           </h2>
           <div className="mt-6 grid gap-3 md:grid-cols-2">
             {principles.map((p, i) => (
               <Reveal key={p.title} delay={i * 0.04}>
                 <article className="rounded-2xl border border-border bg-surface p-6">
-                  <h3 className="text-lg font-semibold tracking-tight">{p.title}</h3>
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    <InlineTranslation namespace="aboutPage" tKey={`principles.${i}.title`} initialText={p.title} />
+                  </h3>
                   <p className="mt-2 text-[15px] leading-relaxed text-muted">
-                    {p.body}
+                    <InlineTranslation namespace="aboutPage" tKey={`principles.${i}.body`} initialText={p.body} />
                   </p>
                 </article>
               </Reveal>
