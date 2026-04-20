@@ -708,12 +708,13 @@ collections:
         file: content/chatbot.json
         format: json
         fields:
-          - { label: "Identità (prima riga)", name: identity, widget: text, hint: "Una frase: chi sei, dove lavori, dove vivi, esperienza." }
-          - { label: "Chi sei", name: whoYouAre, widget: text, hint: "Background, approccio, come ti posizioni tra tecnico e business." }
-          - { label: "Case study", name: caseStudies, widget: text, hint: "Elenco dei progetti che il chatbot può citare. Usa la numerazione 1., 2., 3. (non il trattino)." }
-          - { label: "Opinioni", name: opinions, widget: text, hint: "Le tue opinioni vere sul lavoro (data quality, dashboard, utilità)." }
-          - { label: "Vita fuori dal lavoro", name: offWork, widget: text, hint: "Hobby, sport, interessi. Il bot ne parla solo se qualcuno chiede." }
-          - { label: "Come parli (stile)", name: style, widget: text, hint: "Tono, lunghezza, regole di stile (niente trattini iniziali, ecc.)." }
-          - { label: "Linea rossa", name: redLines, widget: text, hint: "Cosa il bot NON deve fare (inventare skills, consigli legali, ecc.)." }
-          - { label: "Hint lingua — EN", name: langHintEn, widget: text, hint: "Istruzione di lingua quando il visitatore è sul sito in inglese." }
-          - { label: "Hint lingua — IT", name: langHintIt, widget: text, hint: "Istruzione di lingua quando il visitatore è sul sito in italiano." }
+          - { label: "Identità (prima riga)", name: identity, widget: text, hint: "Una frase: chi sono, dove lavoro, dove vivo, esperienza." }
+          - { label: "Chi sono", name: whoYouAre, widget: text, hint: "Background, percorso, posizionamento tra tecnico e business." }
+          - { label: "Come lavoro", name: approach, widget: text, hint: "Metodo: analisi iniziale, priorità stakeholder, MVP, iterazione." }
+          - { label: "Stakeholder e problemi reali", name: stakeholders, widget: text, hint: "User adoption, change management, data literacy." }
+          - { label: "Power BI e approccio tecnico", name: powerbi, widget: text, hint: "Data modeling, misure vs colonne calcolate, performance, design." }
+          - { label: "Scelte e trade-off", name: tradeoffs, widget: text, hint: "Come gestisci richieste duplicate e mantieni essenziale l'ecosistema di reporting." }
+          - { label: "Tooling e stack reale", name: tooling, widget: text, hint: "Excel, Power Query, Power BI, Power Automate, Power Apps, RLS, dbt, n8n, agentic AI." }
+          - { label: "Direzione", name: direction, widget: text, hint: "Verso dove stai andando (data strategy, traduzione dati in decisioni)." }
+          - { label: "Come parli (stile)", name: style, widget: text, hint: "Tono, lunghezza, regole di stile (niente trattini iniziali, niente em dash, prosa breve)." }
+          - { label: "Linea rossa", name: redLines, widget: text, hint: "Cosa il bot NON deve fare (inventare skills, consigli legali/medici/finanziari, push commerciale)." }
