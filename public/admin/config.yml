@@ -1,8 +1,12 @@
 backend:
   name: github
-  repo: REPLACE_WITH/your-repo
+  repo: Ale1299rs/portfolio
   branch: main
+  base_url: https://portfolio-gilt-two-l2xfemriua.vercel.app
+  auth_endpoint: api/auth
 
+# Still allowed on localhost via `npm run admin:dev` — Decap auto-prefers the
+# local proxy when the CMS is opened at http://localhost:3000/admin/.
 local_backend: true
 
 media_folder: public/uploads
