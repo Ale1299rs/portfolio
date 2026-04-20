@@ -1,0 +1,59 @@
+{
+  "slug": "salesforce-cpq-implementation",
+  "order": 1,
+  "category": "Salesforce",
+  "year": "2020–2021",
+  "stack": ["Salesforce CPQ", "Sales Cloud", "Product Rules", "Price Rules"],
+  "hero": { "accent": "from-blue-500/20 via-sky-400/10 to-transparent" },
+  "featured": true,
+  "en": {
+    "title": "Salesforce CPQ Implementation for a B2B Manufacturer",
+    "tagline": "First full CPQ rollout — from legacy Excel quotes to a configured, governed, auditable quote-to-cash.",
+    "industry": "Industrial manufacturing · B2B quoting",
+    "duration": "~9 months",
+    "problem": "Sales was quoting in Excel. Discounts were approved on email, product configurations were inconsistent, and no one could audit why a given price had been given to a given customer.",
+    "data": [
+      "Product catalogue with options, bundles and dependencies",
+      "Price books and currency variants",
+      "Discount matrices and approval thresholds",
+      "Customer master data from Sales Cloud"
+    ],
+    "solution": [
+      "Designed product hierarchy, options and rules with the commercial team — one canonical configurator, no workarounds.",
+      "Built price rules and discount schedules tied to volume and segment; approvals routed via the standard CPQ approval chain.",
+      "Templated quotes in PDF with dynamic content blocks so sales stopped re-doing the same document every week.",
+      "Trained sales and sales ops end-to-end and documented the admin runbook for internal handover."
+    ],
+    "impact": [
+      { "label": "Quote turnaround", "value": "days → hours", "detail": "on standard configurations" },
+      { "label": "Users onboarded", "value": "150+", "detail": "across two business units" },
+      { "label": "Go-live", "value": "on time", "detail": "no scope change after UAT" }
+    ],
+    "takeaway": "CPQ does exactly what you tell it. If master data is messy, CPQ amplifies the mess — so most of the work is upstream."
+  },
+  "it": {
+    "title": "Implementazione Salesforce CPQ per un produttore B2B",
+    "tagline": "Primo rollout CPQ completo — da preventivi in Excel a un quote-to-cash configurato, governato e tracciabile.",
+    "industry": "Manifattura industriale · preventivazione B2B",
+    "duration": "~9 mesi",
+    "problem": "Le vendite quotavano in Excel. Sconti approvati via email, configurazioni prodotto incoerenti, e nessuno poteva ricostruire perché un certo prezzo fosse finito a un certo cliente.",
+    "data": [
+      "Catalogo prodotti con opzioni, bundle e dipendenze",
+      "Price book e varianti valuta",
+      "Matrici di sconto e soglie di approvazione",
+      "Anagrafica clienti da Sales Cloud"
+    ],
+    "solution": [
+      "Progettata la gerarchia prodotto, le opzioni e le regole con il commerciale — un unico configuratore canonico, niente workaround.",
+      "Costruite price rule e discount schedule legate a volume e segmento; approvazioni via CPQ approval chain standard.",
+      "Templato i preventivi in PDF con blocchi dinamici, così le vendite smettono di rifare lo stesso documento ogni settimana.",
+      "Formato sales e sales ops end-to-end e scritto il runbook admin per il passaggio interno."
+    ],
+    "impact": [
+      { "label": "Tempo di preventivazione", "value": "da giorni → ore", "detail": "su configurazioni standard" },
+      { "label": "Utenti formati", "value": "150+", "detail": "su due business unit" },
+      { "label": "Go-live", "value": "nei tempi", "detail": "senza scope change dopo UAT" }
+    ],
+    "takeaway": "CPQ fa esattamente quello che gli dici. Se il master data è sporco, CPQ amplifica il casino — quindi la maggior parte del lavoro è a monte."
+  }
+}

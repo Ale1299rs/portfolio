@@ -1,0 +1,59 @@
+{
+  "slug": "salesforce-service-cloud-rollout",
+  "order": 2,
+  "category": "Salesforce",
+  "year": "2021",
+  "stack": ["Salesforce Service Cloud", "Email-to-Case", "Omni-Channel", "Knowledge"],
+  "hero": { "accent": "from-teal-500/20 via-cyan-400/10 to-transparent" },
+  "featured": false,
+  "en": {
+    "title": "Service Cloud Rollout for a Utility's Customer Care",
+    "tagline": "Replaced a shared mailbox and three Excel trackers with a proper Service Cloud setup — SLA, routing, knowledge base.",
+    "industry": "Utility · customer service · ~80 agents",
+    "duration": "~5 months",
+    "problem": "Customer support ran on a shared Outlook mailbox. Escalations happened on Teams. Nobody could tell you which case was breaching SLA until it already had.",
+    "data": [
+      "Historic email intake (~months of tickets)",
+      "Organisation structure: queues, shifts, skills",
+      "Case taxonomy for routing (billing, technical, commercial)",
+      "SLA targets from the service contract"
+    ],
+    "solution": [
+      "Configured Email-to-Case and Web-to-Case with clean field mapping, so every ticket is a Case with structured metadata from minute one.",
+      "Designed case routing and Omni-Channel queues by skill and shift; SLA milestones and auto-escalation on breach.",
+      "Published a Knowledge Base with articles aligned to the most frequent case types; suggested-article logic in the case layout.",
+      "Delivered a set of manager dashboards for daily cockpit (open cases, aging, SLA health, agent workload)."
+    ],
+    "impact": [
+      { "label": "Cases auto-routed", "value": "95%+", "detail": "no more manual triage" },
+      { "label": "First-response SLA", "value": "<30 min", "detail": "target met within month 2" },
+      { "label": "Shared mailbox retired", "value": "yes", "detail": "no fallback, clean cut-over" }
+    ],
+    "takeaway": "The tool does 20%. The other 80% is defining the process and convincing the team to follow it."
+  },
+  "it": {
+    "title": "Rollout Service Cloud per il Customer Care di una utility",
+    "tagline": "Sostituiti una mailbox condivisa e tre tracker Excel con un setup Service Cloud serio — SLA, routing, knowledge base.",
+    "industry": "Utility · customer service · ~80 agent",
+    "duration": "~5 mesi",
+    "problem": "Il supporto clienti girava su una mailbox Outlook condivisa. Le escalation passavano da Teams. Nessuno sapeva quale ticket fosse in SLA breach finché non lo era già.",
+    "data": [
+      "Intake email storico (~mesi di ticket)",
+      "Struttura org: code, turni, skill",
+      "Tassonomia dei Case per routing (billing, tecnico, commerciale)",
+      "Target SLA dal contratto di servizio"
+    ],
+    "solution": [
+      "Configurati Email-to-Case e Web-to-Case con mapping campi pulito, così ogni ticket è un Case con metadati strutturati dal primo minuto.",
+      "Disegnati case routing e code Omni-Channel per skill e turno; SLA milestone e auto-escalation sul breach.",
+      "Pubblicata una Knowledge Base con articoli allineati ai case type più frequenti; logica di suggested-article nel layout Case.",
+      "Consegnato un set di dashboard manageriali per il cockpit giornaliero (case aperti, aging, SLA health, carico per agent)."
+    ],
+    "impact": [
+      { "label": "Case auto-instradati", "value": "95%+", "detail": "niente più triage manuale" },
+      { "label": "SLA di prima risposta", "value": "<30 min", "detail": "target centrato dal secondo mese" },
+      { "label": "Mailbox condivisa ritirata", "value": "sì", "detail": "niente fallback, cut-over pulito" }
+    ],
+    "takeaway": "Il tool fa il 20%. L'altro 80% è disegnare il processo e convincere il team a seguirlo."
+  }
+}

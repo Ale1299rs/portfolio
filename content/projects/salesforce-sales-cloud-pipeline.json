@@ -1,0 +1,59 @@
+{
+  "slug": "salesforce-sales-cloud-pipeline",
+  "order": 3,
+  "category": "Salesforce",
+  "year": "2021–2022",
+  "stack": ["Sales Cloud", "Lightning", "Flow", "Reports & Dashboards"],
+  "hero": { "accent": "from-sky-500/20 via-blue-400/10 to-transparent" },
+  "featured": false,
+  "en": {
+    "title": "Sales Cloud + Pipeline Reporting for a Commercial Bank",
+    "tagline": "Commercial bankers had their own Excels. After rollout, the weekly pipe review ran off a single Salesforce report.",
+    "industry": "Financial services · commercial banking",
+    "duration": "~6 months",
+    "problem": "Sales activity lived in each banker's personal spreadsheet. Managers reconciled by hand on Sunday nights. Nobody could answer a pipeline question with confidence in the Monday meeting.",
+    "data": [
+      "Opportunity, Account, Contact — including relationship hierarchies",
+      "Activity tracking (tasks, events) from Outlook",
+      "Product catalogue for cross-sell",
+      "Team/region hierarchy for manager views"
+    ],
+    "solution": [
+      "Defined a pragmatic stage model with exit criteria; validation rules so the stage means the same thing across bankers.",
+      "Built Lightning page layouts and required fields that make the data capture painless and non-optional at the same time.",
+      "Automated next-step creation via Flow on stage change, and weekly rollup tasks for managers.",
+      "Delivered Sales Cloud dashboards for the weekly pipeline review — one page, no exports needed."
+    ],
+    "impact": [
+      { "label": "Adoption", "value": "85%+", "detail": "weekly active bankers by month 3" },
+      { "label": "Report prep", "value": "Sundays → Monday 9am", "detail": "no manual reconciliation" },
+      { "label": "Pipeline visibility", "value": "daily", "detail": "vs. weekly Excel cycle" }
+    ],
+    "takeaway": "The first value of Salesforce is not analytics — it is a shared conversation between sales and management. Analytics come second."
+  },
+  "it": {
+    "title": "Sales Cloud + reporting pipeline per una banca commerciale",
+    "tagline": "I banker avevano ognuno il proprio Excel. Dopo il rollout la pipe review settimanale girava da un singolo report Salesforce.",
+    "industry": "Financial services · commercial banking",
+    "duration": "~6 mesi",
+    "problem": "L'attività commerciale viveva nel foglio Excel personale di ciascun banker. I manager riconciliavano a mano la domenica sera. Nessuno rispondeva con sicurezza alle domande del lunedì mattina.",
+    "data": [
+      "Opportunity, Account, Contact — incluse le gerarchie di relazione",
+      "Activity tracking (task, event) da Outlook",
+      "Catalogo prodotti per il cross-sell",
+      "Gerarchia team/region per le viste manageriali"
+    ],
+    "solution": [
+      "Definito uno stage model pragmatico con criteri di uscita; validation rule perché lo stage significhi la stessa cosa tra banker.",
+      "Costruiti layout Lightning e required field che rendono la data capture indolore e non opzionale insieme.",
+      "Automatizzati i next step via Flow sul cambio stage, e i rollup settimanali per i manager.",
+      "Consegnate dashboard Sales Cloud per la pipe review settimanale — una pagina, zero export."
+    ],
+    "impact": [
+      { "label": "Adozione", "value": "85%+", "detail": "banker attivi settimanalmente dal 3° mese" },
+      { "label": "Prep report", "value": "domenica → lunedì alle 9", "detail": "zero riconciliazione manuale" },
+      { "label": "Visibilità pipeline", "value": "giornaliera", "detail": "vs. ciclo settimanale su Excel" }
+    ],
+    "takeaway": "Il primo valore di Salesforce non è l'analytics — è una conversazione condivisa tra vendite e management. L'analytics viene dopo."
+  }
+}
