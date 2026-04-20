@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useAdminMode } from "./AdminModeProvider";
 import { EditableText } from "./EditableText";
 import { useRouter } from "next/navigation";
@@ -13,13 +13,30 @@ interface InlineTranslationProps {
   inputClassName?: string;
 }
 
+function showToast(message: string, type: "success" | "error") {
+  const existing = document.getElementById("admin-toast");
+  if (existing) existing.remove();
+
+  const el = document.createElement("div");
+  el.id = "admin-toast";
+  el.textContent = message;
+  el.style.cssText = `
+    position: fixed; bottom: 64px; right: 16px; z-index: 99999;
+    padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500;
+    background: ${type === "success" ? "rgb(16 185 129)" : "rgb(239 68 68)"};
+    color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  `;
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 3000);
+}
+
 export function InlineTranslation({ 
   namespace, 
   tKey, 
   initialText,
   className,
   inputClassName
-  }: InlineTranslationProps) {
+}: InlineTranslationProps) {
   
   const { isAdminMode } = useAdminMode();
   const locale = useLocale();
@@ -30,30 +47,23 @@ export function InlineTranslation({
       const res = await fetch("/api/translations", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          locale,
-          namespace,
-          keyPath: tKey,
-          value: newText
-        })
+        body: JSON.stringify({ locale, namespace, keyPath: tKey, value: newText })
       });
       
       if (res.ok) {
-        // Forza un refresh dei dati se necessario o affida ad un reload leggero per renderizzare il cambio nei translation contest.
+        showToast("✓ Salvato", "success");
         router.refresh();
       } else {
         const data = await res.json();
+        showToast(`Errore: ${data.error}`, "error");
         console.error("Failed to save translation:", data.error);
-        alert(`Impossibile salvare: ${data.error}`);
       }
     } catch (e) {
+      showToast("Errore di rete", "error");
       console.error(e);
-      alert("Errore di rete durante il salvataggio.");
     }
   };
 
-  // Se l'Admin Mode non è attivo, restituiamo solo la stringa nuda e cruda
-  // in modo da non sporcare il DOM o i ref di Framer Motion inutilmente.
   if (!isAdminMode) {
     return <>{initialText}</>;
   }

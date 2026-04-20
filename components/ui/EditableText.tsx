@@ -22,6 +22,13 @@ export function EditableText({
   const [text, setText] = useState(initialText);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Keep text in sync when server re-renders with updated value (after router.refresh)
+  useEffect(() => {
+    if (!isEditing) {
+      setText(initialText);
+    }
+  }, [initialText, isEditing]);
+
   useEffect(() => {
     if (isEditing && inputRef.current) {
       inputRef.current.focus();
