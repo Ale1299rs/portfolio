@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type Props = {
-  eyebrow?: string;
+  eyebrow?: React.ReactNode;
   title: ReactNode;
   description?: ReactNode;
   align?: "left" | "center";
