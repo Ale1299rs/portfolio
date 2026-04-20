@@ -107,7 +107,7 @@ export function EditableText({
             transition={{ duration: 0.15, ease: "easeOut" }}
             className="flex items-center gap-2"
           >
-            <span className="text-sm font-medium">{text}</span>
+            <span className="">{text}</span>
             <button
               onClick={() => setIsEditing(true)}
               className="grid h-6 w-6 place-items-center rounded-md text-muted opacity-0 outline-none ring-accent/50 transition-all hover:bg-surface-2 hover:text-accent focus:opacity-100 group-hover:opacity-100"
