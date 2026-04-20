@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { InlineTranslation } from "@/components/ui/InlineTranslation";
 import { track } from "@/lib/analytics";
 
 const techStack = [
@@ -39,16 +40,20 @@ export function Hero() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted shadow-soft">
             <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
-            {t("badge")}
+            <InlineTranslation namespace="hero" tKey="badge" initialText={t("badge")} />
           </div>
 
           <h1 className="mt-6 text-display-xl font-semibold tracking-tight">
-            {t("titleBefore")} <span className="text-gradient">{t("titleAccent")}</span>
-            <br className="hidden sm:block" /> {t("titleAfter")}
+            <InlineTranslation namespace="hero" tKey="titleBefore" initialText={t("titleBefore")} />{" "}
+            <span className="text-gradient">
+              <InlineTranslation namespace="hero" tKey="titleAccent" initialText={t("titleAccent")} />
+            </span>
+            <br className="hidden sm:block" />{" "}
+            <InlineTranslation namespace="hero" tKey="titleAfter" initialText={t("titleAfter")} />
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted sm:text-xl">
-            {t("description")}
+            <InlineTranslation namespace="hero" tKey="description" initialText={t("description")} />
           </p>
 
           <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
@@ -57,7 +62,7 @@ export function Hero() {
               onClick={() => track("hero_cta_click", { label: "see_work" })}
               className="group inline-flex h-12 items-center gap-2 rounded-full bg-accent px-6 text-[0.95rem] font-medium text-accent-fg shadow-[0_10px_30px_-10px_rgb(var(--accent)/0.7)] transition hover:brightness-110"
             >
-              {t("ctaPrimary")}
+              <InlineTranslation namespace="hero" tKey="ctaPrimary" initialText={t("ctaPrimary")} />
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <Link
@@ -65,14 +70,14 @@ export function Hero() {
               onClick={() => track("hero_cta_click", { label: "about" })}
               className="inline-flex h-12 items-center gap-2 rounded-full border border-border bg-surface px-6 text-[0.95rem] font-medium transition hover:bg-surface-2"
             >
-              {t("ctaSecondary")}
+              <InlineTranslation namespace="hero" tKey="ctaSecondary" initialText={t("ctaSecondary")} />
             </Link>
           </div>
         </motion.div>
 
         <div className="mx-auto mt-16 max-w-4xl">
           <p className="text-center text-xs uppercase tracking-[0.18em] text-muted">
-            {t("trust")}
+            <InlineTranslation namespace="hero" tKey="trust" initialText={t("trust")} />
           </p>
           <ul className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted">
             {techStack.map((b) => (

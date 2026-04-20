@@ -170,15 +170,6 @@
       "Affinare una scorecard di data quality CRM che scali tra regioni senza diventare l’ennesima dashboard che nessuno apre.",
       "Sperimentare assistenti AI sopra dataset Power BI governati — risposte utili, non allucinate."
     ],
-    "pathTitle": "Il percorso",
-    "timeline": [
-      { "year": "2020", "title": "Salesforce CPQ — prima implementazione", "body": "Entrato in Accenture e subito su un rollout CPQ per un manifatturiero industriale. Ho capito come quoting, product rules e approvazioni si propagano lungo la catena quote-to-cash." },
-      { "year": "2021", "title": "Rollout Service & Sales Cloud", "body": "Due consegne back-to-back: Service Cloud per una utility (case routing, Omni-Channel, Knowledge) e Sales Cloud per una banca (pipeline, Lightning, Flow)." },
-      { "year": "2022", "title": "Svolta su data & analytics", "body": "La maggior parte del tempo si è spostata sul layer di reporting sopra Salesforce. Primo cockpit Power BI da zero — modello semantico, DAX, Power Query, un dataset governato usato davvero dalla leadership." },
-      { "year": "2023", "title": "Data quality come programma", "body": "Costruito un framework di data quality ricorrente: regole in Salesforce, scorecard in Power BI, ownership per region. Da progetto di pulizia una tantum a rituale mensile." },
-      { "year": "2024", "title": "Process mining & automation", "body": "Cliente Oil & Gas: Fluxicon Disco sui dati OpportunityHistory di Salesforce per far emergere rework e tempi morti, poi le automazioni — gestione scadenze, escalation, riassegnazioni, email di riepilogo giornaliere." },
-      { "year": "2025", "title": "Portale staffing in PowerApps", "body": "Collassati quattro processi Excel paralleli (time reporting, allocazioni, availability, chargeability) in un modello PowerApps + SharePoint Lists per ~200 utenti — viste per ruolo, permessi guidati dalla gerarchia, reminder via Power Automate." }
-    ],
     "principlesTitle": "Come penso al lavoro",
     "principles": [
       { "title": "Prima le decisioni, poi i dati.", "body": "Prima di modellare qualunque cosa, mappo le decisioni che il deliverable deve supportare. Tutto il resto segue." },

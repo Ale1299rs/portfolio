@@ -1,7 +1,7 @@
 {
   "site": {
     "role": "Data & Analytics Consultant",
-    "title": "Alex Esposito — Data & Analytics Consultant",
+    "title": "Alex Esposito · Data & Analytics Consultant",
     "description": "Data & Analytics consultant specialising in Salesforce, Power BI, CRM data quality and automation. A portfolio of shipped work from revenue, CRM and process-mining engagements.",
     "location": "Rome, Italy",
     "locale": "en-GB"
@@ -14,7 +14,7 @@
     "primary": "Primary",
     "mobileMenu": "Toggle menu",
     "skip": "Skip to content",
-    "brandAriaLabel": "{name} — home"
+    "brandAriaLabel": "{name} · home"
   },
   "languageSwitcher": {
     "label": "Language",
@@ -37,7 +37,7 @@
   "services": {
     "eyebrow": "What I work on",
     "title": "Four disciplines, one thread: decisions leaders can defend.",
-    "description": "The work spans implementation, analytics, data quality and process discovery — usually in combination on the same account.",
+    "description": "The work spans implementation, analytics, data quality and process discovery, usually in combination on the same account.",
     "items": [
       {
         "title": "Salesforce Analytics",
@@ -169,15 +169,6 @@
       "Process mining with Fluxicon Disco on opportunity lifecycles — turning event logs into automations that cut idle time.",
       "Refining a CRM data-quality scorecard that scales across regions without becoming yet another dashboard no one opens.",
       "Experimenting with AI assistants over governed Power BI datasets — useful answers, not hallucinated ones."
-    ],
-    "pathTitle": "The path here",
-    "timeline": [
-      { "year": "2020", "title": "Salesforce CPQ — first implementation", "body": "Joined Accenture and landed on a CPQ rollout for an industrial manufacturer. Learned how quoting, product rules and approvals compound across the quote-to-cash chain." },
-      { "year": "2021", "title": "Service & Sales Cloud rollouts", "body": "Two back-to-back deliveries: Service Cloud for a utility (case routing, Omni-Channel, Knowledge) and Sales Cloud for a bank (pipeline, Lightning, Flow)." },
-      { "year": "2022", "title": "Pivot to data & analytics", "body": "Most of my time shifted to the reporting layer over Salesforce. First Power BI cockpit from scratch — semantic model, DAX, Power Query, a governed dataset the leadership team actually used." },
-      { "year": "2023", "title": "CRM data quality as a program", "body": "Built a recurring data quality framework: rules in Salesforce, a Power BI scorecard, ownership per region. Data quality became a monthly ritual, not a clean-up project." },
-      { "year": "2024", "title": "Process mining & automation", "body": "Oil & Gas client: used Fluxicon Disco over Salesforce OpportunityHistory to surface rework and idle time, then shipped the automations — expiry management, escalations, reassignments, daily digest emails." },
-      { "year": "2025", "title": "PowerApps staffing portal", "body": "Collapsed four parallel Excel processes (time reporting, allocations, availability, chargeability) into one PowerApps + SharePoint Lists model for ~200 users — role-based views, hierarchy-driven permissions, Power Automate reminders." }
     ],
     "principlesTitle": "How I think about the work",
     "principles": [

@@ -7,6 +7,7 @@ import { ArrowUpRight, TrendingUp, AlertTriangle, Target, Sparkles } from "lucid
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { InlineTranslation } from "@/components/ui/InlineTranslation";
 import { cn } from "@/lib/utils";
 
 type Region = "All" | "EMEA" | "AMER" | "APAC";
@@ -115,12 +116,12 @@ function BarChart({ data }: { data: MonthPoint[] }) {
         const won = (d.closedWon / max) * 100;
         return (
           <div key={d.month} className="flex h-full flex-1 flex-col items-center gap-2">
-            <div className="relative flex w-full flex-1 items-end">
+            <div className="relative w-full flex-1">
               <motion.div
                 initial={{ height: 0 }}
                 animate={{ height: `${h}%` }}
                 transition={{ duration: 0.6, delay: i * 0.04, ease: "easeOut" }}
-                className="w-full rounded-t-md bg-accent/20"
+                className="absolute bottom-0 w-full rounded-t-md bg-accent/20"
                 aria-hidden
               />
               <motion.div
@@ -299,20 +300,20 @@ export function DashboardDemo() {
                 <div className="mb-4 flex items-center justify-between">
                   <div>
                     <h3 className="text-sm font-semibold">
-                      {t("chartPipeline.title")}
+                      <InlineTranslation namespace="demo" tKey="chartPipeline.title" initialText={t("chartPipeline.title")} />
                     </h3>
                     <p className="text-xs text-muted">
-                      {t("chartPipeline.subtitle")}
+                      <InlineTranslation namespace="demo" tKey="chartPipeline.subtitle" initialText={t("chartPipeline.subtitle")} />
                     </p>
                   </div>
                   <div className="flex items-center gap-3 text-xs text-muted">
                     <span className="inline-flex items-center gap-1.5">
                       <span className="h-2.5 w-2.5 rounded-sm bg-accent/25" />{" "}
-                      {t("chartPipeline.legendPipeline")}
+                      <InlineTranslation namespace="demo" tKey="chartPipeline.legendPipeline" initialText={t("chartPipeline.legendPipeline")} />
                     </span>
                     <span className="inline-flex items-center gap-1.5">
                       <span className="h-2.5 w-2.5 rounded-sm bg-accent" />{" "}
-                      {t("chartPipeline.legendWon")}
+                      <InlineTranslation namespace="demo" tKey="chartPipeline.legendWon" initialText={t("chartPipeline.legendWon")} />
                     </span>
                   </div>
                 </div>
@@ -320,8 +321,12 @@ export function DashboardDemo() {
               </div>
 
               <div className="bg-surface p-5 sm:p-6">
-                <h3 className="text-sm font-semibold">{t("chartMomentum.title")}</h3>
-                <p className="text-xs text-muted">{t("chartMomentum.subtitle")}</p>
+                <h3 className="text-sm font-semibold">
+                  <InlineTranslation namespace="demo" tKey="chartMomentum.title" initialText={t("chartMomentum.title")} />
+                </h3>
+                <p className="text-xs text-muted">
+                  <InlineTranslation namespace="demo" tKey="chartMomentum.subtitle" initialText={t("chartMomentum.subtitle")} />
+                </p>
                 <div className="mt-4">
                   <Sparkline data={data.map((d) => d.pipeline)} />
                 </div>
@@ -331,15 +336,17 @@ export function DashboardDemo() {
                       <Sparkles className="h-4 w-4" aria-hidden />
                     </div>
                     <div>
-                      <p className="text-sm font-medium">{t("insight.label")}</p>
-                      <p className="mt-1 text-xs leading-relaxed text-muted">
-                        {t(`insight.${insightKey}`)}
+                      <p className="text-sm font-medium">
+                        <InlineTranslation namespace="demo" tKey="insight.label" initialText={t("insight.label")} />
                       </p>
+                      <div className="mt-1 text-xs leading-relaxed text-muted">
+                        <InlineTranslation namespace="demo" tKey={`insight.${insightKey}`} initialText={t(`insight.${insightKey}`)} />
+                      </div>
                       <Link
                         href="/projects"
                         className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-accent hover:underline"
                       >
-                        {t("insight.cta")}
+                        <InlineTranslation namespace="demo" tKey="insight.cta" initialText={t("insight.cta")} />
                         <ArrowUpRight className="h-3.5 w-3.5" aria-hidden />
                       </Link>
                     </div>
@@ -349,7 +356,9 @@ export function DashboardDemo() {
             </div>
           </div>
 
-          <p className="mt-4 text-center text-xs text-muted">{t("disclaimer")}</p>
+          <div className="mt-4 text-center text-xs text-muted">
+            <InlineTranslation namespace="demo" tKey="disclaimer" initialText={t("disclaimer")} />
+          </div>
         </div>
       </Container>
     </section>

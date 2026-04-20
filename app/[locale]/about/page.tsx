@@ -5,6 +5,8 @@ import { Reveal } from "@/components/layout/Reveal";
 import { site } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
+type Principle = { title: string; body: string };
+
 export async function generateMetadata({
   params,
 }: {
@@ -22,9 +24,6 @@ export async function generateMetadata({
   };
 }
 
-type TimelineEntry = { year: string; title: string; body: string };
-type Principle = { title: string; body: string };
-
 export default async function AboutPage({
   params,
 }: {
@@ -35,7 +34,6 @@ export default async function AboutPage({
   const t = await getTranslations("aboutPage");
   const tSite = await getTranslations("site");
 
-  const timeline = t.raw("timeline") as TimelineEntry[];
   const principles = t.raw("principles") as Principle[];
   const now = t.raw("now") as string[];
 
@@ -122,31 +120,6 @@ export default async function AboutPage({
               ))}
             </ul>
           </div>
-        </Container>
-      </section>
-
-      <section className="pb-14">
-        <Container size="wide">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            {t("pathTitle")}
-          </h2>
-          <ol className="mt-6 space-y-3">
-            {timeline.map((tl, i) => (
-              <Reveal key={tl.year} delay={i * 0.04}>
-                <li className="grid gap-4 rounded-2xl border border-border bg-surface p-5 sm:grid-cols-[90px_1fr] sm:p-6">
-                  <div className="text-sm font-semibold text-accent">{tl.year}</div>
-                  <div>
-                    <h3 className="text-lg font-semibold tracking-tight">
-                      {tl.title}
-                    </h3>
-                    <p className="mt-1.5 text-[15px] leading-relaxed text-muted">
-                      {tl.body}
-                    </p>
-                  </div>
-                </li>
-              </Reveal>
-            ))}
-          </ol>
         </Container>
       </section>
 

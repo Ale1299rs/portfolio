@@ -21,6 +21,8 @@ export function buildSystemPrompt(locale: string): string {
     data.direction,
     data.style,
     data.redLines,
+    data.projects,
+    data.articles,
     `## Lingua / Language\n${locale === "it" ? LANG_HINT_IT : LANG_HINT_EN}`,
   ];
   return sections.join("\n\n");

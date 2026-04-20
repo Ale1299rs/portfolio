@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { AdminModeProvider } from "@/components/ui/AdminModeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ChatWidget } from "@/components/chat/ChatWidget";
@@ -104,18 +105,20 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} suppressHydrationWarning className={inter.variable}>
       <body className="min-h-screen bg-bg text-fg antialiased">
         <NextIntlClientProvider>
-          <ThemeProvider>
-            <a
-              href="#main"
-              className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-fg"
-            >
-              {tNav("skip")}
-            </a>
-            <Header />
-            <main id="main">{children}</main>
-            <Footer />
-            <ChatWidget />
-          </ThemeProvider>
+          <AdminModeProvider>
+            <ThemeProvider>
+              <a
+                href="#main"
+                className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-fg"
+              >
+                {tNav("skip")}
+              </a>
+              <Header />
+              <main id="main">{children}</main>
+              <Footer />
+              <ChatWidget />
+            </ThemeProvider>
+          </AdminModeProvider>
         </NextIntlClientProvider>
         <Script
           id="ld-person"
