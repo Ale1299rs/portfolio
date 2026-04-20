@@ -17,6 +17,7 @@ const techStack = [
   "PowerApps",
   "SharePoint Lists",
   "Power Automate",
+  "Dataverse",
   "Fluxicon Disco",
   "Python",
 ];
