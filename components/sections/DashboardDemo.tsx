@@ -114,8 +114,8 @@ function BarChart({ data }: { data: MonthPoint[] }) {
         const h = (d.pipeline / max) * 100;
         const won = (d.closedWon / max) * 100;
         return (
-          <div key={d.month} className="flex flex-1 flex-col items-center gap-2">
-            <div className="relative flex h-full w-full items-end">
+          <div key={d.month} className="flex h-full flex-1 flex-col items-center gap-2">
+            <div className="relative flex w-full flex-1 items-end">
               <motion.div
                 initial={{ height: 0 }}
                 animate={{ height: `${h}%` }}

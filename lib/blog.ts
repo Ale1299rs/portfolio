@@ -20,7 +20,7 @@ const rawPosts: RawPost[] = [
     slug: "forecast-accuracy-is-a-data-contract-problem",
     date: "2026-02-18",
     tags: ["Salesforce", "RevOps", "Forecasting"],
-    url: "https://medium.com/",
+    url: "https://medium.com/@ale.espos90/salesforce-forecast-accuracy-is-a-data-contract-problem-8abd772ddd10",
     en: {
       title: "Forecast Accuracy Is a Data-Contract Problem",
       excerpt:
