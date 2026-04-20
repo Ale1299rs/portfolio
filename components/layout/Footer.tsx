@@ -72,16 +72,6 @@ export async function Footer() {
               </li>
               <li>
                 <a
-                  href={site.socials.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-fg/80 transition hover:text-fg"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a
                   href={site.socials.medium}
                   target="_blank"
                   rel="noopener noreferrer"

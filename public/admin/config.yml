@@ -690,9 +690,26 @@ collections:
             widget: object
             fields:
               - { label: LinkedIn, name: linkedin, widget: string }
-              - { label: GitHub, name: github, widget: string }
               - { label: Medium, name: medium, widget: string }
           - label: SEO keywords
             name: keywords
             widget: list
             field: { label: Keyword, name: keyword, widget: string }
+
+  - name: chatbot-config
+    label: "Chatbot (Chat with Alex)"
+    files:
+      - name: chatbot
+        label: "Persona & system prompt"
+        file: content/chatbot.json
+        format: json
+        fields:
+          - { label: "Identità (prima riga)", name: identity, widget: text, hint: "Una frase: chi sei, dove lavori, dove vivi, esperienza." }
+          - { label: "Chi sei", name: whoYouAre, widget: text, hint: "Background, approccio, come ti posizioni tra tecnico e business." }
+          - { label: "Case study", name: caseStudies, widget: text, hint: "Elenco dei progetti che il chatbot può citare. Usa la numerazione 1., 2., 3. (non il trattino)." }
+          - { label: "Opinioni", name: opinions, widget: text, hint: "Le tue opinioni vere sul lavoro (data quality, dashboard, utilità)." }
+          - { label: "Vita fuori dal lavoro", name: offWork, widget: text, hint: "Hobby, sport, interessi. Il bot ne parla solo se qualcuno chiede." }
+          - { label: "Come parli (stile)", name: style, widget: text, hint: "Tono, lunghezza, regole di stile (niente trattini iniziali, ecc.)." }
+          - { label: "Linea rossa", name: redLines, widget: text, hint: "Cosa il bot NON deve fare (inventare skills, consigli legali, ecc.)." }
+          - { label: "Hint lingua — EN", name: langHintEn, widget: text, hint: "Istruzione di lingua quando il visitatore è sul sito in inglese." }
+          - { label: "Hint lingua — IT", name: langHintIt, widget: text, hint: "Istruzione di lingua quando il visitatore è sul sito in italiano." }
