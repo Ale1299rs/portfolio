@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Ale1299rs/portfolio
   branch: main
-  base_url: https://portfolio-gilt-two-l2xfemriua.vercel.app
+  base_url: https://alex-esposito.com
   auth_endpoint: api/auth
 
 # Still allowed on localhost via `npm run admin:dev` — Decap auto-prefers the
