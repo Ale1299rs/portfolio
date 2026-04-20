@@ -1,57 +1,88 @@
 {
-  "slug": "crm-data-quality-framework",
-  "order": 5,
-  "category": "Data Quality",
-  "year": "2023",
-  "stack": ["Salesforce", "Power BI", "Power Query", "Python (pandas)"],
-  "hero": { "accent": "from-fuchsia-500/20 via-violet-400/10 to-transparent" },
-  "featured": true,
+  "stack": [
+    "Salesforce",
+    "Power BI",
+    "Power Query",
+    "Python (pandas)"
+  ],
   "en": {
-    "title": "CRM Data Quality Framework",
-    "tagline": "'The reports are wrong' was always a data problem, never a reporting one. Built the framework to prove it and fix it.",
-    "industry": "Enterprise sales organisation",
-    "duration": "~10 weeks",
-    "problem": "Every reporting issue the commercial team raised ended up in the same place: duplicates, empty fields, inconsistent picklists. Leadership was losing trust in the numbers but kept aiming at the dashboards.",
+    "impact": [
+      {
+        "label": "Duplicate accounts",
+        "value": "−60%",
+        "detail": "on the core book of business"
+      },
+      {
+        "label": "Key-field completeness",
+        "value": "+28pp",
+        "detail": "on industry, segment, country"
+      },
+      {
+        "label": "DQI",
+        "value": "built + adopted",
+        "detail": "reviewed weekly by the team"
+      }
+    ],
     "data": [
-      "Salesforce Account, Contact, Opportunity — full snapshot",
+      "Salesforce Account, Contact, Opportunity full snapshot",
       "Third-party enrichment sample for validation",
       "Field usage statistics per team and region"
     ],
+    "tagline": "'The reports are wrong' was always a data problem, never a reporting one. Built the framework to prove it and fix it.",
+    "duration": "~10 weeks",
+    "takeaway": "The report is never the problem. It is always the field upstream and you only fix it once there is a scoreboard.",
+    "title": "CRM Data Quality Framework",
     "solution": [
-      "Profiled the CRM with reproducible SQL + pandas — quantified duplicates, completeness and conformity per field, per team.",
-      "Defined a Data Quality Index (DQI) weighted by the impact each field has on revenue workflows — not by how 'full' it looks.",
+      "Profiled the CRM with reproducible SQL + pandas, quantified duplicates, completeness and conformity per field, per team.",
+      "Defined a Data Quality Index (DQI) weighted by the impact each field has on revenue workflows, not by how 'full' it looks.",
       "Built dedup and standardisation rules (industry, country, phone) partly automated in Salesforce, partly in a clean-up playbook for sales ops.",
-      "Published the DQI in Power BI and made it the opening slide of the weekly ops meeting — with owners per failing dimension."
+      "Published the DQI in Power BI and made it the opening slide of the weekly ops meeting with owners per failing dimension."
     ],
-    "impact": [
-      { "label": "Duplicate accounts", "value": "−60%", "detail": "on the core book of business" },
-      { "label": "Key-field completeness", "value": "+28pp", "detail": "on industry, segment, country" },
-      { "label": "DQI", "value": "built + adopted", "detail": "reviewed weekly by the team" }
-    ],
-    "takeaway": "The report is never the problem. It is always the field upstream — and you only fix it once there is a scoreboard."
+    "industry": "Enterprise sales organisation",
+    "problem": "Every reporting issue the commercial team raised ended up in the same place: duplicates, empty fields, inconsistent picklists. Leadership was losing trust in the numbers but kept aiming at the dashboards."
   },
   "it": {
-    "title": "Framework di Data Quality per il CRM",
-    "tagline": "'I report sono sbagliati' era sempre un problema di dato, mai di reporting. Ho costruito il framework per dimostrarlo e sistemarlo.",
-    "industry": "Enterprise sales organisation",
-    "duration": "~10 settimane",
-    "problem": "Ogni issue di reporting che il commerciale sollevava finiva sempre nello stesso posto: duplicati, campi vuoti, picklist incoerenti. La leadership perdeva fiducia nei numeri ma continuava a sparare sulle dashboard.",
+    "impact": [
+      {
+        "label": "Account duplicati",
+        "value": "−60%",
+        "detail": "sul book of business principale"
+      },
+      {
+        "label": "Completeness campi chiave",
+        "value": "+28pp",
+        "detail": "su industry, segment, country"
+      },
+      {
+        "label": "DQI",
+        "value": "costruito + adottato",
+        "detail": "revisionato ogni settimana dal team"
+      }
+    ],
     "data": [
-      "Salesforce Account, Contact, Opportunity — snapshot completo",
+      "Salesforce Account, Contact, Opportunity snapshot completo",
       "Sample di arricchimento di terze parti per validazione",
       "Statistiche d'uso dei campi per team e region"
     ],
+    "tagline": "'I report sono sbagliati' era sempre un problema di dato, mai di reporting. Ho costruito il framework per dimostrarlo e sistemarlo.",
+    "duration": "~10 settimane",
+    "takeaway": "Il report non è mai il problema. È sempre il campo a monte e lo sistemi solo quando c'è una scoreboard.",
+    "title": "Framework di Data Quality per il CRM",
     "solution": [
-      "Profilato il CRM con SQL + pandas riproducibili — quantificati duplicati, completeness e conformity per campo e per team.",
-      "Definito un Data Quality Index (DQI) ponderato per l'impatto di ciascun campo sui workflow revenue — non per quanto 'pieno' appare.",
+      "Profilato il CRM con SQL + pandas riproducibili quantificati duplicati, completeness e conformity per campo e per team.",
+      "Definito un Data Quality Index (DQI) ponderato per l'impatto di ciascun campo sui workflow revenue non per quanto 'pieno' appare.",
       "Costruite regole di dedup e standardizzazione (industry, country, telefono) in parte automatiche in Salesforce, in parte come playbook di cleanup per sales ops.",
-      "Pubblicato il DQI in Power BI e reso slide di apertura della riunione ops settimanale — con un owner per ciascuna dimensione fallata."
+      "Pubblicato il DQI in Power BI e reso slide di apertura della riunione ops settimanale con un owner per ciascuna dimensione fallata."
     ],
-    "impact": [
-      { "label": "Account duplicati", "value": "−60%", "detail": "sul book of business principale" },
-      { "label": "Completeness campi chiave", "value": "+28pp", "detail": "su industry, segment, country" },
-      { "label": "DQI", "value": "costruito + adottato", "detail": "revisionato ogni settimana dal team" }
-    ],
-    "takeaway": "Il report non è mai il problema. È sempre il campo a monte — e lo sistemi solo quando c'è una scoreboard."
-  }
+    "industry": "Enterprise sales organisation",
+    "problem": "Ogni issue di reporting che il commerciale sollevava finiva sempre nello stesso posto: duplicati, campi vuoti, picklist incoerenti. La leadership perdeva fiducia nei numeri ma continuava a sparare sulle dashboard."
+  },
+  "slug": "crm-data-quality-framework",
+  "featured": true,
+  "order": 5,
+  "hero": {
+    "accent": "from-fuchsia-500/20 via-violet-400/10 to-transparent"
+  },
+  "year": "2023",
+  "category": "Data Quality"
 }
