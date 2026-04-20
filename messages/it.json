@@ -118,26 +118,112 @@
       { "week": "Settimana 1", "title": "Mappa delle decisioni", "body": "Intervisto gli sponsor, mappo tutte le domande a cui il deliverable deve rispondere e concordo la metrica di successo prima di toccare i dati." },
       { "week": "Settimana 2–3", "title": "Contratto sui dati", "body": "Profilo i sistemi sorgente, quantifico la qualità e blocco le definizioni con chi possiede i campi upstream." },
       { "week": "Settimana 3–5", "title": "Build & test", "body": "Modelli incrementali, misure governate e unit test su ogni KPI. Nulla va in produzione senza un test." },
-      { "week": "Settimana 6", "title": "Handover operativo", "body": "Training finale, documentazione DAX/SFDC e setup dei rituali giornalieri per rendere il team autonomo." }
+      { "week": "Settimana 5–6", "title": "Handover", "body": "Documentazione, runbook e una sessione di training. Il team se lo prende in carico lunedì — con 2 settimane di garanzia." }
     ]
   },
   "chatBanner": {
-    "title": "Hai un account Salesforce o una dashboard Power BI che nessuno usa?",
-    "description": "Parliamo di come trasformarli in uno strumento di governance che il tuo team aprirà ogni mattina.",
-    "cta": "Parla con il bot o prenota una call",
-    "status": "Disponibile per nuovi progetti Q2 2024"
+    "eyebrow": "Chiedi al portfolio",
+    "title": "Preferisci una chiacchierata allo scroll?",
+    "description": "C’è un chatbot addestrato sul mio profilo, i progetti e lo stack. Chiedigli di un case study specifico, degli strumenti che uso o di come affronto un problema — in italiano o in inglese.",
+    "cta": "Chatta con me adesso",
+    "hint": "Le risposte sono generate dall’AI sui miei appunti."
   },
-  "contact": {
-    "title": "Lavoriamo insieme",
-    "description": "Hai un progetto in mente o vuoi solo fare due chiacchiere su Data & Analytics? Mandami un messaggio.",
-    "email": "Email",
-    "linkedin": "LinkedIn",
-    "github": "GitHub",
-    "cta": "Invami un'email",
-    "availability": "Disponibile per consulenze e progetti freelance"
+  "projectsPage": {
+    "metaTitle": "Progetti — Case study in data, analytics e CRM",
+    "metaDescription": "Case study in Salesforce analytics, Power BI, data quality del CRM e revenue operations.",
+    "eyebrow": "Engagement selezionati",
+    "titleBefore": "Progetti, scritti come veri",
+    "titleAccent": "case study",
+    "titleAfter": ".",
+    "description": "Ogni studio segue la stessa struttura: il problema di business, i dati disponibili, cosa abbiamo costruito e l’impatto una volta in produzione."
+  },
+  "projectPage": {
+    "backAll": "Tutti i progetti",
+    "sections": {
+      "problem": "Problema di business",
+      "data": "Dati disponibili",
+      "solution": "Soluzione implementata",
+      "impact": "Impatto",
+      "takeaway": "Cosa ho imparato"
+    },
+    "prevLabel": "Case study precedente",
+    "nextLabel": "Prossimo case study"
+  },
+  "aboutPage": {
+    "metaTitle": "Chi sono — Profilo e percorso",
+    "metaDescription": "Da Salesforce CPQ a data, analytics e automation. Come sono arrivato qui e come penso al lavoro.",
+    "eyebrow": "Chi sono",
+    "titleBefore": "Da Salesforce a",
+    "titleAccent": "data & automation",
+    "titleAfter": "— stesso obiettivo: decisioni che i leader possono difendere.",
+    "intro": "Sono {name}, consulente Data & Analytics in Accenture, con base in {location}. Ho iniziato nel 2020 implementando Salesforce (CPQ, Service, Sales), poi mi sono spostato su analytics, data quality e automazione.",
+    "glanceTitle": "In breve",
+    "glance": {
+      "years": "Anni in consulenza",
+      "engagements": "Progetti consegnati",
+      "stack": "Stack principale",
+      "based": "Base"
+    },
+    "nowTitle": "A cosa sto lavorando adesso",
+    "now": [
+      "Process mining con Fluxicon Disco sui cicli opportunity — dagli event log alle automazioni che tagliano i tempi morti.",
+      "Affinare una scorecard di data quality CRM che scali tra regioni senza diventare l’ennesima dashboard che nessuno apre.",
+      "Sperimentare assistenti AI sopra dataset Power BI governati — risposte utili, non allucinate."
+    ],
+    "principlesTitle": "Come penso al lavoro",
+    "principles": [
+      { "title": "Prima le decisioni, poi i dati.", "body": "Prima di modellare qualunque cosa, mappo le decisioni che il deliverable deve supportare. Tutto il resto segue." },
+      { "title": "Spiegabile batte ingegnoso.", "body": "Uno score che il team scavalca non vale nulla. Scelgo approcci che il business può difendere con parole proprie." },
+      { "title": "Chiudo con ownership, non dipendenza.", "body": "Documentazione, test, runbook e una sessione di training. Il team deve possederlo lunedì." },
+      { "title": "Numeri con un owner chiaro.", "body": "Ogni metrica ha una definizione, un test e una persona che la firma. È così che la fiducia si accumula." }
+    ]
+  },
+  "blogPage": {
+    "metaTitle": "Articoli — Appunti su dati, analytics e RevOps",
+    "metaDescription": "Saggi brevi su forecasting Salesforce, design di Power BI, data quality del CRM e le abitudini operative dietro alle analytics credibili.",
+    "eyebrow": "Articoli",
+    "titleBefore": "Appunti dal",
+    "titleAccent": "lavoro",
+    "titleAfter": ".",
+    "description": "Saggi brevi sulle decisioni dietro i grafici — forecasting, data quality, design di dashboard e le abitudini noiose che rendono le analytics davvero credibili. Sindacati da Medium.",
+    "featured": "In evidenza",
+    "readOnMedium": "Leggi su Medium",
+    "read": "Leggi",
+    "readingTime": "{min} min di lettura"
   },
   "footer": {
-    "rights": "© {year} Alex Esposito. Tutti i diritti riservati.",
-    "builtWith": "Costruito con Next.js e ❤️ a Roma."
+    "navigate": "Naviga",
+    "services": "Servizi",
+    "elsewhere": "Altrove",
+    "rights": "Tutti i diritti riservati.",
+    "builtWith": "Costruito con Next.js, Tailwind, Framer Motion. Deploy su Vercel.",
+    "serviceItems": ["Salesforce Analytics", "Power BI", "Data Quality CRM", "Process Mining"]
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Questa pagina si è fermata allo stage 0.",
+    "description": "L’URL non esiste — o il modello dati è cambiato. Torna ai case study o riprendi da dove eri.",
+    "home": "Torna alla home",
+    "projects": "Sfoglia i case study"
+  },
+  "chat": {
+    "open": "Chatta con me adesso",
+    "buttonLabel": "Chatta con me adesso",
+    "close": "Chiudi chat",
+    "title": "Chatta con Alex",
+    "subtitle": "Data & analytics consultant — di solito rispondo in pochi secondi.",
+    "greeting": "Ehi — sono Alex (o meglio, un chatbot addestrato sul mio profilo). Chiedimi pure dei progetti, dello stack, o come affronterei un problema specifico. Feel free to ask in English too.",
+    "placeholder": "Scrivimi di Salesforce, Power BI, forecast…",
+    "send": "Invia messaggio",
+    "typing": "Alex sta scrivendo",
+    "suggestionsLabel": "Prova a chiedere",
+    "suggestions": [
+      "Che fai esattamente?",
+      "Parlami del progetto Salesforce",
+      "Quale progetto Power BI dovrei leggere per primo?",
+      "Sei più tecnico o business?"
+    ],
+    "error": "Qualcosa è andato storto da parte mia. Riprova tra un attimo.",
+    "disclaimer": "Risposte AI basate sul profilo di Alex. Non vincolanti."
   }
 }
