@@ -15,7 +15,7 @@ const techStack = [
   "Power BI",
   "DAX",
   "PowerApps",
-  "SharePoint Lists",
+  "SharePoint",
   "Power Automate",
   "Dataverse",
   "Fluxicon Disco",
