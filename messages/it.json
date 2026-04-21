@@ -1,7 +1,7 @@
 {
   "site": {
     "role": "Consulente Data & Analytics",
-    "title": "Alex Esposito — Consulente Data & Analytics",
+    "title": "Alex Esposito · Consulente Data & Analytics",
     "description": "Consulente Data & Analytics specializzato in Salesforce, Power BI, data quality del CRM e automation. Un portfolio dei lavori consegnati tra revenue, CRM e process mining.",
     "location": "Roma, Italia",
     "locale": "it-IT"
@@ -14,7 +14,7 @@
     "primary": "Principale",
     "mobileMenu": "Apri menu",
     "skip": "Vai al contenuto",
-    "brandAriaLabel": "{name} — home"
+    "brandAriaLabel": "{name} · home"
   },
   "languageSwitcher": {
     "label": "Lingua",
@@ -37,7 +37,7 @@
   "services": {
     "eyebrow": "Su cosa lavoro",
     "title": "Quattro discipline, un filo conduttore: decisioni difendibili.",
-    "description": "Il lavoro copre implementazione, analytics, data quality e process mining — spesso in combinazione sullo stesso account.",
+    "description": "Il lavoro copre implementazione, analytics, data quality e process mining, spesso in combinazione sullo stesso account.",
     "items": [
       {
         "title": "Salesforce Analytics",
@@ -46,7 +46,7 @@
       },
       {
         "title": "Power BI",
-        "body": "Cockpit executive, modelli semantici e DAX che rispondono alle domande in agenda — non solo a quelle nei dati.",
+        "body": "Cockpit executive, modelli semantici e DAX che rispondono alle domande in agenda, non solo a quelle nei dati.",
         "outputs": ["Star schema", "Misure governate", "Rollout RLS"]
       },
       {
@@ -56,12 +56,12 @@
       },
       {
         "title": "Revenue Ops Enablement",
-        "body": "Dagli spreadsheet alle pipeline governate — così i numeri che finiscono in CdA sono affidabili e il team riprende le sue settimane.",
+        "body": "Dagli spreadsheet alle pipeline governate, così i numeri che finiscono in CdA sono affidabili e il team riprende le sue settimane.",
         "outputs": ["Contratti sulle metriche", "Layer self-serve", "Runbook"]
       },
       {
         "title": "Process Mining",
-        "body": "Scopri come girano davvero i processi — non come dice il manuale. Analisi event-log con Fluxicon Disco per far emergere bottleneck, loop di rilavorazione e le varianti che ti mangiano il margine.",
+        "body": "Scopri come girano davvero i processi, non come dice il manuale. Analisi event-log con Fluxicon Disco per far emergere bottleneck, loop di rilavorazione e le varianti che ti mangiano il margine.",
         "outputs": ["Event log", "Mappa delle varianti", "Report bottleneck"]
       }
     ]
@@ -69,7 +69,7 @@
   "demo": {
     "eyebrow": "Anteprima live",
     "title": "Una dashboard progettata attorno alle decisioni, non ai grafici.",
-    "description": "Filtra per regione per vedere come una pipeline ben modellata mostri da dove arriva davvero il fatturato — e dove si blocca in silenzio.",
+    "description": "Filtra per regione per vedere come una pipeline ben modellata mostri da dove arriva davvero il fatturato, e dove si blocca in silenzio.",
     "regionLabel": "Filtro regione",
     "kpis": {
       "openPipeline": "Pipeline aperta",
@@ -95,10 +95,10 @@
     },
     "insight": {
       "label": "Insight",
-      "apac": "La pipeline APAC è cresciuta del 17% ma il win rate cala di 1,4 pp. Gli stage saltati sui deal Enterprise sono correlati agli slittamenti — serve un momento di coaching.",
-      "emea": "EMEA guida la crescita dei closed-won. Win rate su nel mid-market; ciclo Enterprise allungato a 91 giorni — atteso dato il carico di rinnovi Q1.",
+      "apac": "La pipeline APAC è cresciuta del 17% ma il win rate cala di 1,4 pp. Gli stage saltati sui deal Enterprise sono correlati agli slittamenti. Serve un momento di coaching.",
+      "emea": "EMEA guida la crescita dei closed-won. Win rate su nel mid-market; ciclo Enterprise allungato a 91 giorni (atteso dato il carico di rinnovi Q1).",
       "amer": "AMER con pipeline stabile; il bucket fermo è cresciuto del 12% WoW. Consigliati play di re-engagement sui 14 deal fermi da oltre 45 giorni.",
-      "all": "Pipeline in crescita del 12,5% MoM su tutte le regioni. €3,8M sono flaggati come fermi — il 62% è in carico a 9 rep che hanno mancato gli SLA di attività questo mese.",
+      "all": "Pipeline in crescita del 12,5% MoM su tutte le regioni. €3,8M sono flaggati come fermi, e il 62% è in carico a 9 rep che hanno mancato gli SLA di attività questo mese.",
       "cta": "Leggi il case study"
     },
     "disclaimer": "Numeri illustrativi. Gli engagement reali consegnano dashboard in produzione con dati governati e definizioni firmate."
@@ -118,18 +118,18 @@
       { "week": "Settimana 1", "title": "Mappa delle decisioni", "body": "Intervisto gli sponsor, mappo tutte le domande a cui il deliverable deve rispondere e concordo la metrica di successo prima di toccare i dati." },
       { "week": "Settimana 2–3", "title": "Contratto sui dati", "body": "Profilo i sistemi sorgente, quantifico la qualità e blocco le definizioni con chi possiede i campi upstream." },
       { "week": "Settimana 3–5", "title": "Build & test", "body": "Modelli incrementali, misure governate e unit test su ogni KPI. Nulla va in produzione senza un test." },
-      { "week": "Settimana 5–6", "title": "Handover", "body": "Documentazione, runbook e una sessione di training. Il team se lo prende in carico lunedì — con 2 settimane di garanzia." }
+      { "week": "Settimana 5-6", "title": "Handover", "body": "Documentazione, runbook e una sessione di training. Il team se lo prende in carico lunedì, con 2 settimane di garanzia." }
     ]
   },
   "chatBanner": {
     "eyebrow": "Chiedi al portfolio",
     "title": "Preferisci una chiacchierata allo scroll?",
-    "description": "C’è un chatbot addestrato sul mio profilo, i progetti e lo stack. Chiedigli di un case study specifico, degli strumenti che uso o di come affronto un problema — in italiano o in inglese.",
+    "description": "C’è un chatbot addestrato sul mio profilo, i progetti e lo stack. Chiedigli di un case study specifico, degli strumenti che uso o di come affronto un problema, in italiano o in inglese.",
     "cta": "Chatta con me adesso",
     "hint": "Le risposte sono generate dall’AI sui miei appunti."
   },
   "projectsPage": {
-    "metaTitle": "Progetti — Case study in data, analytics e CRM",
+    "metaTitle": "Progetti · Case study in data, analytics e CRM",
     "metaDescription": "Case study in Salesforce analytics, Power BI, data quality del CRM e revenue operations.",
     "eyebrow": "Engagement selezionati",
     "titleBefore": "Progetti, scritti come veri",
@@ -150,12 +150,12 @@
     "nextLabel": "Prossimo case study"
   },
   "aboutPage": {
-    "metaTitle": "Chi sono — Profilo e percorso",
+    "metaTitle": "Chi sono · Profilo",
     "metaDescription": "Da Salesforce CPQ a data, analytics e automation. Come sono arrivato qui e come penso al lavoro.",
     "eyebrow": "Chi sono",
     "titleBefore": "Da Salesforce a",
     "titleAccent": "data & automation",
-    "titleAfter": "— stesso obiettivo: decisioni che i leader possono difendere.",
+    "titleAfter": ". Stesso obiettivo: decisioni che i leader possono difendere.",
     "intro": "Sono {name}, consulente Data & Analytics in Accenture, con base in {location}. Ho iniziato nel 2020 implementando Salesforce (CPQ, Service, Sales), poi mi sono spostato su analytics, data quality e automazione.",
     "glanceTitle": "In breve",
     "glance": {
@@ -166,9 +166,9 @@
     },
     "nowTitle": "A cosa sto lavorando adesso",
     "now": [
-      "Process mining con Fluxicon Disco sui cicli opportunity — dagli event log alle automazioni che tagliano i tempi morti.",
+      "Process mining con Fluxicon Disco sui cicli opportunity: dagli event log alle automazioni che tagliano i tempi morti.",
       "Affinare una scorecard di data quality CRM che scali tra regioni senza diventare l’ennesima dashboard che nessuno apre.",
-      "Sperimentare assistenti AI sopra dataset Power BI governati — risposte utili, non allucinate."
+      "Sperimentare assistenti AI sopra dataset Power BI governati, per risposte utili e non allucinate."
     ],
     "principlesTitle": "Come penso al lavoro",
     "principles": [
@@ -179,13 +179,13 @@
     ]
   },
   "blogPage": {
-    "metaTitle": "Articoli — Appunti su dati, analytics e RevOps",
+    "metaTitle": "Articoli · Appunti su dati, analytics e RevOps",
     "metaDescription": "Saggi brevi su forecasting Salesforce, design di Power BI, data quality del CRM e le abitudini operative dietro alle analytics credibili.",
     "eyebrow": "Articoli",
     "titleBefore": "Appunti dal",
     "titleAccent": "lavoro",
     "titleAfter": ".",
-    "description": "Saggi brevi sulle decisioni dietro i grafici — forecasting, data quality, design di dashboard e le abitudini noiose che rendono le analytics davvero credibili. Sindacati da Medium.",
+    "description": "Saggi brevi sulle decisioni dietro i grafici: forecasting, data quality, design di dashboard e le abitudini noiose che rendono le analytics davvero credibili. Sindacati da Medium.",
     "featured": "In evidenza",
     "readOnMedium": "Leggi su Medium",
     "read": "Leggi",
@@ -202,7 +202,7 @@
   "notFound": {
     "code": "404",
     "title": "Questa pagina si è fermata allo stage 0.",
-    "description": "L’URL non esiste — o il modello dati è cambiato. Torna ai case study o riprendi da dove eri.",
+    "description": "L’URL non esiste, o il modello dati è cambiato. Torna ai case study o riprendi da dove eri.",
     "home": "Torna alla home",
     "projects": "Sfoglia i case study"
   },
@@ -211,8 +211,8 @@
     "buttonLabel": "Chatta con me adesso",
     "close": "Chiudi chat",
     "title": "Chatta con Alex",
-    "subtitle": "Data & analytics consultant — di solito rispondo in pochi secondi.",
-    "greeting": "Ehi — sono Alex (o meglio, un chatbot addestrato sul mio profilo). Chiedimi pure dei progetti, dello stack, o come affronterei un problema specifico. Feel free to ask in English too.",
+    "subtitle": "Data & analytics consultant. Di solito rispondo in pochi secondi.",
+    "greeting": "Ehi, sono Alex (o meglio, un chatbot addestrato sul mio profilo). Chiedimi pure dei progetti, dello stack, o come affronterei un problema specifico. Feel free to ask in English too.",
     "placeholder": "Scrivimi di Salesforce, Power BI, forecast…",
     "send": "Invia messaggio",
     "typing": "Alex sta scrivendo",

@@ -14,10 +14,10 @@
   "featured": true,
   "en": {
     "title": "From Fragmented Excel to a PowerApps Staffing Portal",
-    "tagline": "A governed single source of truth for time reporting, staffing, availability and chargeability — built on PowerApps + SharePoint Lists, with Power Automate for reminders.",
+    "tagline": "A governed single source of truth for time reporting, staffing, availability and chargeability. Built on PowerApps + SharePoint Lists, with Power Automate for reminders.",
     "industry": "Internal consulting operations · ~200 users",
     "duration": "~6 months, incremental releases",
-    "problem": "Time reporting, project allocations, availability and chargeability each lived in a separate Excel file. Every area had its own owner, its own update rhythm, and its own view of the data. Versions diverged, reconciliation was manual, permissions were inconsistent, and weekly reporting depended on someone stitching files together. The problem looked like a reporting one — it was a model-and-ownership one.",
+    "problem": "Time reporting, project allocations, availability and chargeability each lived in a separate Excel file. Every area had its own owner, its own update rhythm, and its own view of the data. Versions diverged, reconciliation was manual, permissions were inconsistent, and weekly reporting depended on someone stitching files together. The problem looked like a reporting one. It was a model-and-ownership one.",
     "data": [
       "People registry with role, level, country, Centre of Excellence and manager hierarchy",
       "Time reporting entries by period (working days, PTO/sick, training, BD)",
@@ -26,48 +26,48 @@
       "Manager–report relationships used to derive every visibility perimeter"
     ],
     "solution": [
-      "Consolidated the four Excel files into SharePoint Lists as the single source of truth — one canonical schema for people, allocations, TRs, certifications and availability.",
-      "Built a PowerApps canvas app as the unified experience layer: My Info, Update my TR, Certification, Reservation, Team Overview and Admin — the same base data, different surfaces.",
+      "Consolidated the four Excel files into SharePoint Lists as the single source of truth: one canonical schema for people, allocations, TRs, certifications and availability.",
+      "Built a PowerApps canvas app as the unified experience layer: My Info, Update my TR, Certification, Reservation, Team Overview and Admin. Same base data, different surfaces.",
       "Applied role-based visibility from the hierarchy: Self perimeter for Consultants and below; Team perimeter with staffing, availability and chargeability for Manager+; Governance perimeter for admin configuration.",
       "Wired Power Automate flows for the recurring nudges the Excel model couldn't do: TR submission reminders per period, allocation expiry alerts, certification prompts, and a daily digest for managers.",
-      "Shipped analytics views on top of the same dataset — chargeability trends by country/CoE/period, working-days vs PTO/Training/BD breakdown, drill-down tables and Excel export — so reporting stopped being a consolidation job.",
+      "Shipped analytics views on top of the same dataset: chargeability trends by country/CoE/period, working-days vs PTO/Training/BD breakdown, drill-down tables and Excel export. Reporting stopped being a consolidation job.",
       "Designed forms with required fields, structured dropdowns and validation rules so the data is clean at input time, not corrected at reporting time."
     ],
     "impact": [
       { "label": "Source files collapsed", "value": "4 → 1", "detail": "TR, Allocations, Availability and Chargeability onto one SharePoint model" },
-      { "label": "Access perimeters", "value": "3", "detail": "Self, Team and Governance — driven by the manager hierarchy" },
+      { "label": "Access perimeters", "value": "3", "detail": "Self, Team and Governance, driven by the manager hierarchy" },
       { "label": "Automated reminders", "value": "Power Automate", "detail": "TR deadlines, allocation expiry, daily manager digest" },
       { "label": "Reporting lag", "value": "near real-time", "detail": "analytics read directly from the governed lists" }
     ],
-    "takeaway": "The UI was the easy part. The real work was collapsing four parallel Excel processes into one data model with ownership baked in. Once the model was right, role-based views and reminder flows fell out naturally — and the reporting stopped being a weekly archaeology exercise."
+    "takeaway": "The UI was the easy part. The real work was collapsing four parallel Excel processes into one data model with ownership baked in. Once the model was right, role-based views and reminder flows fell out naturally, and reporting stopped being a weekly archaeology exercise."
   },
   "it": {
     "title": "Da Excel frammentati a un portale PowerApps per lo staffing",
-    "tagline": "Una single source of truth governata per time reporting, staffing, availability e chargeability — costruita su PowerApps + SharePoint Lists, con Power Automate per i reminder.",
+    "tagline": "Una single source of truth governata per time reporting, staffing, availability e chargeability. Costruita su PowerApps + SharePoint Lists, con Power Automate per i reminder.",
     "industry": "Operations interne di consulenza · ~200 utenti",
     "duration": "~6 mesi, rilasci incrementali",
-    "problem": "Time reporting, allocazioni progetto, availability e chargeability vivevano ognuno su un file Excel separato. Ogni area aveva il proprio owner, il proprio ritmo di aggiornamento e la propria vista dei dati. Le versioni divergevano, la riconciliazione era manuale, i permessi incoerenti e il reporting settimanale dipendeva da qualcuno che consolidava i file a mano. Sembrava un problema di reporting — era un problema di modello dati e ownership.",
+    "problem": "Time reporting, allocazioni progetto, availability e chargeability vivevano ognuno su un file Excel separato. Ogni area aveva il proprio owner, il proprio ritmo di aggiornamento e la propria vista dei dati. Le versioni divergevano, la riconciliazione era manuale, i permessi incoerenti e il reporting settimanale dipendeva da qualcuno che consolidava i file a mano. Sembrava un problema di reporting. Era un problema di modello dati e ownership.",
     "data": [
       "Anagrafica persone con ruolo, level, country, Centre of Excellence e gerarchia manager",
       "Record di time reporting per periodo (working days, PTO/malattia, training, BD)",
       "Allocazioni progetto con date, probabilità di rinnovo, finestre di estensione e piani alternativi",
       "Certificazioni (ottenute, in corso, status) e dichiarazioni di presenza in ufficio",
-      "Relazioni manager–report usate per derivare ogni perimetro di visibilità"
+      "Relazioni manager-report usate per derivare ogni perimetro di visibilità"
     ],
     "solution": [
-      "Consolidati i quattro Excel in SharePoint Lists come single source of truth — uno schema canonico per persone, allocazioni, TR, certificazioni e availability.",
-      "Costruita un'app PowerApps canvas come layer di esperienza unificato: My Info, Update my TR, Certification, Reservation, Team Overview e Admin — stessi dati, superfici diverse.",
+      "Consolidati i quattro Excel in SharePoint Lists come single source of truth: uno schema canonico per persone, allocazioni, TR, certificazioni e availability.",
+      "Costruita un'app PowerApps canvas come layer di esperienza unificato: My Info, Update my TR, Certification, Reservation, Team Overview e Admin. Stessi dati, superfici diverse.",
       "Applicata la visibilità per ruolo a partire dalla gerarchia: perimetro Self per i Consultant e sotto; perimetro Team con staffing, availability e chargeability per Manager+; perimetro Governance per la configurazione admin.",
       "Collegati flussi Power Automate per i nudge ricorrenti che il modello Excel non poteva gestire: reminder di sottomissione TR per periodo, alert di scadenza allocazione, prompt sulle certificazioni e digest giornaliero per i manager.",
-      "Consegnate viste analytics sopra lo stesso dataset — trend chargeability per country/CoE/periodo, breakdown working / PTO / training / BD, drill-down tabellare ed export Excel — così il reporting ha smesso di essere un lavoro di consolidamento.",
+      "Consegnate viste analytics sopra lo stesso dataset: trend chargeability per country/CoE/periodo, breakdown working / PTO / training / BD, drill-down tabellare ed export Excel. Il reporting ha smesso di essere un lavoro di consolidamento.",
       "Disegnati i form con campi obbligatori, dropdown strutturati e regole di validazione: il dato nasce pulito in input, non si corregge a valle."
     ],
     "impact": [
       { "label": "File sorgente collassati", "value": "4 → 1", "detail": "TR, Allocazioni, Availability e Chargeability su un unico modello SharePoint" },
-      { "label": "Perimetri di accesso", "value": "3", "detail": "Self, Team e Governance — guidati dalla gerarchia manager" },
+      { "label": "Perimetri di accesso", "value": "3", "detail": "Self, Team e Governance, guidati dalla gerarchia manager" },
       { "label": "Reminder automatici", "value": "Power Automate", "detail": "scadenze TR, scadenza allocazioni, digest giornaliero manager" },
       { "label": "Latenza reporting", "value": "near real-time", "detail": "le analytics leggono direttamente dalle liste governate" }
     ],
-    "takeaway": "La UI era la parte facile. Il lavoro vero è stato collassare quattro processi Excel paralleli in un modello dati con ownership incorporata. Una volta sistemato il modello, le viste per ruolo e i flussi di reminder sono venuti di conseguenza — e il reporting ha smesso di essere un esercizio di archeologia settimanale."
+    "takeaway": "La UI era la parte facile. Il lavoro vero è stato collassare quattro processi Excel paralleli in un modello dati con ownership incorporata. Una volta sistemato il modello, le viste per ruolo e i flussi di reminder sono venuti di conseguenza, e il reporting ha smesso di essere un esercizio di archeologia settimanale."
   }
 }

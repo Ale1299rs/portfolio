@@ -13,7 +13,7 @@
     "duration": "~6 months",
     "problem": "Sales activity lived in each banker's personal spreadsheet. Managers reconciled by hand on Sunday nights. Nobody could answer a pipeline question with confidence in the Monday meeting.",
     "data": [
-      "Opportunity, Account, Contact — including relationship hierarchies",
+      "Opportunity, Account, Contact (including relationship hierarchies)",
       "Activity tracking (tasks, events) from Outlook",
       "Product catalogue for cross-sell",
       "Team/region hierarchy for manager views"
@@ -22,14 +22,14 @@
       "Defined a pragmatic stage model with exit criteria; validation rules so the stage means the same thing across bankers.",
       "Built Lightning page layouts and required fields that make the data capture painless and non-optional at the same time.",
       "Automated next-step creation via Flow on stage change, and weekly rollup tasks for managers.",
-      "Delivered Sales Cloud dashboards for the weekly pipeline review — one page, no exports needed."
+      "Delivered Sales Cloud dashboards for the weekly pipeline review: one page, no exports needed."
     ],
     "impact": [
       { "label": "Adoption", "value": "85%+", "detail": "weekly active bankers by month 3" },
       { "label": "Report prep", "value": "Sundays → Monday 9am", "detail": "no manual reconciliation" },
       { "label": "Pipeline visibility", "value": "daily", "detail": "vs. weekly Excel cycle" }
     ],
-    "takeaway": "The first value of Salesforce is not analytics — it is a shared conversation between sales and management. Analytics come second."
+    "takeaway": "The first value of Salesforce is not analytics. It is a shared conversation between sales and management. Analytics come second."
   },
   "it": {
     "title": "Sales Cloud + reporting pipeline per una banca commerciale",
@@ -38,7 +38,7 @@
     "duration": "~6 mesi",
     "problem": "L'attività commerciale viveva nel foglio Excel personale di ciascun banker. I manager riconciliavano a mano la domenica sera. Nessuno rispondeva con sicurezza alle domande del lunedì mattina.",
     "data": [
-      "Opportunity, Account, Contact — incluse le gerarchie di relazione",
+      "Opportunity, Account, Contact (incluse le gerarchie di relazione)",
       "Activity tracking (task, event) da Outlook",
       "Catalogo prodotti per il cross-sell",
       "Gerarchia team/region per le viste manageriali"
@@ -47,13 +47,13 @@
       "Definito uno stage model pragmatico con criteri di uscita; validation rule perché lo stage significhi la stessa cosa tra banker.",
       "Costruiti layout Lightning e required field che rendono la data capture indolore e non opzionale insieme.",
       "Automatizzati i next step via Flow sul cambio stage, e i rollup settimanali per i manager.",
-      "Consegnate dashboard Sales Cloud per la pipe review settimanale — una pagina, zero export."
+      "Consegnate dashboard Sales Cloud per la pipe review settimanale: una pagina, zero export."
     ],
     "impact": [
       { "label": "Adozione", "value": "85%+", "detail": "banker attivi settimanalmente dal 3° mese" },
       { "label": "Prep report", "value": "domenica → lunedì alle 9", "detail": "zero riconciliazione manuale" },
       { "label": "Visibilità pipeline", "value": "giornaliera", "detail": "vs. ciclo settimanale su Excel" }
     ],
-    "takeaway": "Il primo valore di Salesforce non è l'analytics — è una conversazione condivisa tra vendite e management. L'analytics viene dopo."
+    "takeaway": "Il primo valore di Salesforce non è l'analytics. È una conversazione condivisa tra vendite e management. L'analytics viene dopo."
   }
 }

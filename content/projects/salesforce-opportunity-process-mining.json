@@ -11,18 +11,18 @@
     "tagline": "The funnel on the slide was linear. The funnel in Salesforce had 180+ variants. Disco made that gap impossible to ignore.",
     "industry": "Energy (Oil & Gas) · national sales organisation, 400+ reps",
     "duration": "6 weeks",
-    "problem": "Sales leadership was convinced the opportunity flow followed the textbook: Qualification → Needs Analysis → Proposal → Negotiation → Closed. In reality, only 1 in 6 deals moved through that happy path. Deals jumped backward, skipped validation, stalled between approvers — and the forecast debate every quarter was really a debate about a process nobody had ever actually looked at.",
+    "problem": "Sales leadership was convinced the opportunity flow followed the textbook: Qualification → Needs Analysis → Proposal → Negotiation → Closed. In reality, only 1 in 6 deals moved through that happy path. Deals jumped backward, skipped validation, stalled between approvers, and the forecast debate every quarter was really a debate about a process nobody had ever actually looked at.",
     "data": [
       "Salesforce OpportunityHistory: every stage change with timestamp + user",
       "OpportunityFieldHistory on Amount and CloseDate",
       "~640k events across 18 months of opportunities",
-      "User object: role, region, line manager — for resource-level analysis",
+      "User object: role, region, line manager, for resource-level analysis",
       "Account segmentation (strategic / key / standard)"
     ],
     "solution": [
       "Pulled a clean event log from Salesforce via SOQL + Python (pm4py): case id = OpportunityId, activity = new stage, resource = user. Reproducible as a monthly refresh.",
-      "Loaded the log into Fluxicon Disco — 180+ unique paths collapsed into 6 dominant patterns covering 84% of deals.",
-      "Used Disco's bottleneck view to locate the real waiting points. The slowest step was not 'Proposal → Negotiation' as everyone assumed — it was 'Qualification → Proposal' (deals waiting on a central pricing team).",
+      "Loaded the log into Fluxicon Disco. 180+ unique paths collapsed into 6 dominant patterns covering 84% of deals.",
+      "Used Disco's bottleneck view to locate the real waiting points. The slowest step was not 'Proposal → Negotiation' as everyone assumed. It was 'Qualification → Proposal' (deals waiting on a central pricing team).",
       "Quantified rework loops: deals bouncing between Proposal and Qualification more than once = 22% of cycle-time overrun. Built a Power BI monitor on the same KPIs so findings survive the presentation."
     ],
     "impact": [
@@ -30,25 +30,25 @@
       { "label": "Median cycle time", "value": "−17%", "detail": "after removing the main rework loop" },
       { "label": "Stage-skipping rate", "value": "−63%", "detail": "on the credit-check step" }
     ],
-    "takeaway": "You cannot improve a sales process you have never actually looked at. Disco on top of OpportunityHistory takes days, not quarters — and changes the conversation from opinion to evidence."
+    "takeaway": "You cannot improve a sales process you have never actually looked at. Disco on top of OpportunityHistory takes days, not quarters, and changes the conversation from opinion to evidence."
   },
   "it": {
     "title": "Process Mining sul funnel Salesforce con Fluxicon Disco",
     "tagline": "Il funnel sulla slide era lineare. Il funnel in Salesforce aveva 180+ varianti. Disco ha reso il gap impossibile da ignorare.",
     "industry": "Energy (Oil & Gas) · sales organisation nazionale, 400+ rep",
     "duration": "6 settimane",
-    "problem": "La sales leadership era convinta che le opportunity seguissero il manuale: Qualification → Needs Analysis → Proposal → Negotiation → Closed. In realtà solo 1 deal su 6 seguiva quel percorso. I deal tornavano indietro, saltavano la validation, restavano fermi tra approvatori — e il dibattito sul forecast ogni trimestre era in realtà un dibattito su un processo che nessuno aveva mai guardato davvero.",
+    "problem": "La sales leadership era convinta che le opportunity seguissero il manuale: Qualification → Needs Analysis → Proposal → Negotiation → Closed. In realtà solo 1 deal su 6 seguiva quel percorso. I deal tornavano indietro, saltavano la validation, restavano fermi tra approvatori, e il dibattito sul forecast ogni trimestre era in realtà un dibattito su un processo che nessuno aveva mai guardato davvero.",
     "data": [
       "Salesforce OpportunityHistory: ogni cambio stage con timestamp + utente",
       "OpportunityFieldHistory su Amount e CloseDate",
       "~640k eventi su 18 mesi di opportunity",
-      "Oggetto User: ruolo, region, manager di linea — per l'analisi a livello di risorsa",
+      "Oggetto User: ruolo, region, manager di linea, per l'analisi a livello di risorsa",
       "Segmentazione account (strategici / key / standard)"
     ],
     "solution": [
       "Estratto un event log pulito da Salesforce via SOQL + Python (pm4py): case id = OpportunityId, activity = nuovo stage, resource = utente. Riproducibile come refresh mensile.",
-      "Caricato il log su Fluxicon Disco — 180+ percorsi unici collassati in 6 pattern dominanti che coprono l'84% dei deal.",
-      "Usata la vista bottleneck di Disco per trovare i veri punti di attesa. Lo step più lento non era 'Proposal → Negotiation' come tutti pensavano — era 'Qualification → Proposal' (deal in attesa del team centrale di pricing).",
+      "Caricato il log su Fluxicon Disco. 180+ percorsi unici collassati in 6 pattern dominanti che coprono l'84% dei deal.",
+      "Usata la vista bottleneck di Disco per trovare i veri punti di attesa. Lo step più lento non era 'Proposal → Negotiation' come tutti pensavano. Era 'Qualification → Proposal' (deal in attesa del team centrale di pricing).",
       "Quantificati i loop di rilavorazione: deal che rimbalzavano tra Proposal e Qualification più di una volta = 22% dello sforamento di cycle time. Costruito un monitor Power BI sugli stessi KPI perché i fix restino."
     ],
     "impact": [
@@ -56,6 +56,6 @@
       { "label": "Cycle time mediano", "value": "−17%", "detail": "dopo aver tolto il loop principale" },
       { "label": "Stage skipping", "value": "−63%", "detail": "sul passaggio di credit check" }
     ],
-    "takeaway": "Non puoi migliorare un sales process che non hai mai davvero guardato. Disco sopra OpportunityHistory prende giorni, non trimestri — e sposta la conversazione da opinione a evidenza."
+    "takeaway": "Non puoi migliorare un sales process che non hai mai davvero guardato. Disco sopra OpportunityHistory prende giorni, non trimestri, e sposta la conversazione da opinione a evidenza."
   }
 }

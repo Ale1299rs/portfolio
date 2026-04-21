@@ -8,7 +8,7 @@
   "featured": false,
   "en": {
     "title": "Service Cloud Rollout for a Utility's Customer Care",
-    "tagline": "Replaced a shared mailbox and three Excel trackers with a proper Service Cloud setup — SLA, routing, knowledge base.",
+    "tagline": "Replaced a shared mailbox and three Excel trackers with a proper Service Cloud setup: SLA, routing, knowledge base.",
     "industry": "Utility · customer service · ~80 agents",
     "duration": "~5 months",
     "problem": "Customer support ran on a shared Outlook mailbox. Escalations happened on Teams. Nobody could tell you which case was breaching SLA until it already had.",
@@ -33,7 +33,7 @@
   },
   "it": {
     "title": "Rollout Service Cloud per il Customer Care di una utility",
-    "tagline": "Sostituiti una mailbox condivisa e tre tracker Excel con un setup Service Cloud serio — SLA, routing, knowledge base.",
+    "tagline": "Sostituiti una mailbox condivisa e tre tracker Excel con un setup Service Cloud serio: SLA, routing, knowledge base.",
     "industry": "Utility · customer service · ~80 agent",
     "duration": "~5 mesi",
     "problem": "Il supporto clienti girava su una mailbox Outlook condivisa. Le escalation passavano da Teams. Nessuno sapeva quale ticket fosse in SLA breach finché non lo era già.",

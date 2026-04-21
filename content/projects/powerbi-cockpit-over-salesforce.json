@@ -11,7 +11,7 @@
     "tagline": "IT was running a manual monthly review to check who held which licenses and which department was over or under its allocation. We replaced it with a real-time self-serve dashboard.",
     "industry": "Call Centre · IT Operations",
     "duration": "~8 weeks",
-    "problem": "The IT team ran a recurring joint review every month to cross-reference license assignments against department headcounts: who held what, which departments had excess seats they never used, and which were under-provisioned. The process was entirely manual — spreadsheets, email chains, and a half-day meeting — and it consumed IT's time without adding any analytical depth. There was also no visibility into actual usage, so procurement decisions were made on gut feel.",
+    "problem": "The IT team ran a recurring joint review every month to cross-reference license assignments against department headcounts: who held what, which departments had excess seats they never used, and which were under-provisioned. The process was entirely manual (spreadsheets, email chains, and a half-day meeting) and it consumed IT's time without adding any analytical depth. There was also no visibility into actual usage, so procurement decisions were made on gut feel.",
     "data": [
       "Active Directory / license assignment export (per user, per product)",
       "Department org chart and headcount from HR system",
@@ -20,9 +20,9 @@
     ],
     "solution": [
       "Built a Power Query pipeline that ingests AD exports and joins them to the org chart so every license is tagged with department, role tier, and cost centre.",
-      "Designed a semantic model with two fact tables — one for assignments, one for usage events — linked to shared Department, User, and Product dimensions.",
+      "Designed a semantic model with two fact tables (one for assignments, one for usage events) linked to shared Department, User, and Product dimensions.",
       "Dashboard shows three views: real-time assignment map (who holds what), department variance (over/under vs. headcount target), and a usage heatmap (licensed but never used in 90 days).",
-      "Added drill-through so IT can select a department, see every individual license, flag reclaims, and export a clean handover list — no spreadsheet needed.",
+      "Added drill-through so IT can select a department, see every individual license, flag reclaims, and export a clean handover list. No spreadsheet needed.",
       "Threshold alerts on the dashboard surface departments exceeding budgeted seats by more than 10%, triggering an automated Power Automate notification to the IT lead."
     ],
     "impact": [
@@ -37,7 +37,7 @@
     "tagline": "L'IT faceva una revisione manuale mensile per controllare chi aveva quali licenze e quali dipartimenti erano in eccesso o in difetto. L'abbiamo sostituita con una dashboard self-serve in tempo reale.",
     "industry": "Call Centre · IT Operations",
     "duration": "~8 settimane",
-    "problem": "Il team IT conduceva ogni mese una revisione congiunta per incrociare le assegnazioni di licenze con gli organici dei dipartimenti: chi aveva cosa, quali reparti avevano posti in eccesso mai usati e quali erano sotto-provisioned. Il processo era interamente manuale — fogli Excel, scambi di email e mezzo giorno di meeting — e consumava il tempo dell'IT senza aggiungere profondità analitica. Non c'era nemmeno visibilità sull'utilizzo effettivo, quindi le decisioni di procurement venivano prese a intuito.",
+    "problem": "Il team IT conduceva ogni mese una revisione congiunta per incrociare le assegnazioni di licenze con gli organici dei dipartimenti: chi aveva cosa, quali reparti avevano posti in eccesso mai usati e quali erano sotto-provisioned. Il processo era interamente manuale (fogli Excel, scambi di email e mezzo giorno di meeting) e consumava il tempo dell'IT senza aggiungere profondità analitica. Non c'era nemmeno visibilità sull'utilizzo effettivo, quindi le decisioni di procurement venivano prese a intuito.",
     "data": [
       "Export di Active Directory / assegnazione licenze (per utente, per prodotto)",
       "Organigramma e headcount dal sistema HR",
@@ -46,9 +46,9 @@
     ],
     "solution": [
       "Costruita una pipeline Power Query che ingerisce gli export AD e li unisce all'organigramma, in modo che ogni licenza sia taggata con dipartimento, livello di ruolo e centro di costo.",
-      "Disegnato un modello semantico con due fact table — una per le assegnazioni, una per gli eventi di utilizzo — collegate alle dimensioni condivise Dipartimento, Utente e Prodotto.",
+      "Disegnato un modello semantico con due fact table (una per le assegnazioni, una per gli eventi di utilizzo) collegate alle dimensioni condivise Dipartimento, Utente e Prodotto.",
       "La dashboard mostra tre viste: mappa delle assegnazioni in tempo reale (chi ha cosa), varianza per dipartimento (eccesso/difetto vs. target headcount), e una heatmap di utilizzo (licenziati ma mai usati negli ultimi 90 giorni).",
-      "Aggiunto drill-through: l'IT seleziona un dipartimento, vede ogni singola licenza, contrassegna i recuperi ed esporta un elenco pulito — nessun foglio Excel necessario.",
+      "Aggiunto drill-through: l'IT seleziona un dipartimento, vede ogni singola licenza, contrassegna i recuperi ed esporta un elenco pulito. Nessun foglio Excel necessario.",
       "Alert a soglia sulla dashboard per i dipartimenti che superano di oltre il 10% i posti a budget, con notifica automatica via Power Automate al responsabile IT."
     ],
     "impact": [

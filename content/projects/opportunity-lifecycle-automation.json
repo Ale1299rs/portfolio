@@ -19,10 +19,10 @@
       "Account segmentation (strategic / key / standard)"
     ],
     "solution": [
-      "Scheduled Salesforce Flow scans all open opportunities nightly and tags each with one of five states (stale, at-risk, escalate, reassign, auto-close), with the reason written back to a dedicated field — nothing is a black box.",
+      "Scheduled Salesforce Flow scans all open opportunities nightly and tags each with one of five states (stale, at-risk, escalate, reassign, auto-close), with the reason written back to a dedicated field. Nothing is a black box.",
       "Power Automate syncs the HR feed: when a rep becomes inactive, their opportunities are reassigned to the line manager within minutes, with a handover note from last activity history.",
       "Smart escalation on strategic deals: opportunities above a value threshold and in stage ≥ Negotiation with no activity for 14+ days auto-create an escalation record, post a Chatter mention to the account owner and the regional VP, and draft an Outlook email with deal context ready to send.",
-      "Daily 08:00 digest: every sales manager gets an email with their team's pipeline hygiene score, top 5 escalations of the day, and one-click actions that write back to Salesforce. Auto-close runs only below a value threshold — strategic deals always route to a human."
+      "Daily 08:00 digest: every sales manager gets an email with their team's pipeline hygiene score, top 5 escalations of the day, and one-click actions that write back to Salesforce. Auto-close runs only below a value threshold. Strategic deals always route to a human."
     ],
     "impact": [
       { "label": "Expired open opps", "value": "2,400 → <50", "detail": "within 6 weeks, then steady state" },
@@ -30,7 +30,7 @@
       { "label": "Strategic escalations caught", "value": "3.2×", "detail": "vs. prior manual spotting" },
       { "label": "Hours returned", "value": "+18h/wk", "detail": "across sales ops & managers" }
     ],
-    "takeaway": "The fastest way to clean a pipeline is to stop hand-cleaning it. Once the rules are written down, boring Flows and a Power Automate digest do the work — every day, forever, without a meeting."
+    "takeaway": "The fastest way to clean a pipeline is to stop hand-cleaning it. Once the rules are written down, boring Flows and a Power Automate digest do the work, every day, forever, without a meeting."
   },
   "it": {
     "title": "Automazione del ciclo di vita delle Opportunity per un leader globale dell'Energy",
@@ -45,10 +45,10 @@
       "Segmentazione account (strategici / key / standard)"
     ],
     "solution": [
-      "Un Salesforce Flow schedulato scansiona ogni notte le opportunity aperte e le tagga con uno di cinque stati (stale, at-risk, escalate, reassign, auto-close), con la ragione scritta in un campo dedicato — nessun automatismo è scatola nera.",
+      "Un Salesforce Flow schedulato scansiona ogni notte le opportunity aperte e le tagga con uno di cinque stati (stale, at-risk, escalate, reassign, auto-close), con la ragione scritta in un campo dedicato. Nessun automatismo è scatola nera.",
       "Power Automate sincronizza il feed HR: quando un rep diventa inattivo, le sue opportunity vengono riassegnate al manager di linea in minuti, con una nota di handover dall'ultima activity history.",
       "Escalation intelligente sui deal strategici: opportunity sopra una soglia di valore e in stage ≥ Negotiation ferme da 14+ giorni creano un escalation record, pubblicano una Chatter mention ad account owner e VP di area, e generano una bozza email Outlook con il contesto del deal pronta da inviare.",
-      "Digest giornaliero alle 08:00: ogni sales manager riceve un'email con il pipeline hygiene score del team, le 5 escalation del giorno, e azioni one-click che scrivono in Salesforce. L'auto-close gira solo sotto una soglia di valore — i deal strategici passano sempre da una persona."
+      "Digest giornaliero alle 08:00: ogni sales manager riceve un'email con il pipeline hygiene score del team, le 5 escalation del giorno, e azioni one-click che scrivono in Salesforce. L'auto-close gira solo sotto una soglia di valore. I deal strategici passano sempre da una persona."
     ],
     "impact": [
       { "label": "Opp aperte scadute", "value": "2.400 → <50", "detail": "in 6 settimane, poi steady state" },
@@ -56,6 +56,6 @@
       { "label": "Escalation strategiche intercettate", "value": "3,2×", "detail": "vs. spotting manuale precedente" },
       { "label": "Ore restituite", "value": "+18h/sett", "detail": "tra sales ops e manager" }
     ],
-    "takeaway": "Il modo più veloce di pulire una pipeline è smettere di pulirla a mano. Una volta scritte le regole, un paio di Flow noiosi e un digest di Power Automate fanno il lavoro — ogni giorno, per sempre, senza bisogno di una riunione."
+    "takeaway": "Il modo più veloce di pulire una pipeline è smettere di pulirla a mano. Una volta scritte le regole, un paio di Flow noiosi e un digest di Power Automate fanno il lavoro, ogni giorno, per sempre, senza bisogno di una riunione."
   }
 }
